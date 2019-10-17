@@ -5,8 +5,16 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
-#include "core/e8call.hpp"
+#include <stdint.h>
+
+#include "CSignature.h"
+#include "CTFGCClientSystem.hpp"
+#include "C_BaseEntity.hpp"
+#include "logging.hpp"
+
+namespace re {
+class CTFParty;
+}  // namespace re
 
 using namespace re;
 

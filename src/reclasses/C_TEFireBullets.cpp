@@ -4,8 +4,10 @@
  *  Created on: Jul 27, 2018
  *      Author: bencat07
  */
-#include "reclasses.hpp"
+#include <stdint.h>
+
 #include "C_TEFireBullets.hpp"
+#include "CSignature.h"
 
 C_TEFireBullets *C_TEFireBullets::GTEFireBullets()
 {

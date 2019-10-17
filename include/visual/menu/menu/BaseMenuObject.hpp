@@ -6,19 +6,29 @@
 #pragma once
 
 #include <SDL2/SDL_events.h>
-#include <vector>
 #include <menu/interface/IMessageHandler.hpp>
-#include <functional>
 #include <menu/tinyxml2.hpp>
 #include <menu/KeyValue.hpp>
 #include <drawing.hpp>
+#include <vector>
+#include <functional>
+#include <cstddef>
+#include <optional>
+#include <string>
+
 #include "BoundingBox.hpp"
+#include "colors.hpp"
+
+namespace tinyxml2 {
+class XMLElement;
+}  // namespace tinyxml2
 
 namespace zerokernel
 {
 
 class Menu;
 class BoundingBox;
+class Message;
 
 class BaseMenuObject : public IMessageHandler
 {

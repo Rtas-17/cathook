@@ -5,8 +5,22 @@
  *      Author: nullifiedcat
  */
 
+#include <client_class.h>
+#include <icliententity.h>
+#include <mathlib/vector.h>
+#include <core/sdk.hpp>
+#include <functional>
+#include <string>
+
 #include "projlogging.hpp"
-#include "common.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "interfaces.hpp"
+#include "logging.hpp"
+#include "velocity.hpp"
+
+struct model_t;
 
 namespace projectile_logging
 {

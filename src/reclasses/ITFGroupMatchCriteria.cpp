@@ -5,7 +5,10 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <stdint.h>
+
+#include "CSignature.h"
+#include "ITFGroupMatchCriteria.hpp"
 
 int re::ITFGroupMatchCriteria::SetMatchGroup(re::ITFGroupMatchCriteria *this_, int group)
 {

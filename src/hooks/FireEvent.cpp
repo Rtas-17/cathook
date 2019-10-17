@@ -5,6 +5,9 @@
 
 #include "HookedMethods.hpp"
 
+class IGameEvent;
+class IGameEventManager2;
+
 namespace hacks::tf2::killstreak
 {
 extern void fire_event(IGameEvent *event);

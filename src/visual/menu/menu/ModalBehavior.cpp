@@ -1,7 +1,11 @@
 #include <menu/BaseMenuObject.hpp>
 #include <menu/ModalBehavior.hpp>
-#include <menu/Menu.hpp>
 #include <menu/Message.hpp>
+#include <stdio.h>
+#include <string>
+
+#include "SDL_keyboard.h"
+#include "SDL_scancode.h"
 
 /*
   Created on 26.07.18.

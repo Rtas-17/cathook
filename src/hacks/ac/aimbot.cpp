@@ -7,8 +7,21 @@
 
 #include <hacks/ac/aimbot.hpp>
 #include <hacks/AntiCheat.hpp>
-#include <settings/Float.hpp>
-#include "common.hpp"
+#include <cdll_int.h>
+#include <client_class.h>
+#include <icliententity.h>
+#include <iserver.h>
+#include <mathlib/vector.h>
+#include <string.h>
+#include <core/sdk.hpp>
+#include <string>
+
+#include "Registered.hpp"
+#include "classinfo.hpp"
+#include "entitycache.hpp"
+#include "helpers.hpp"
+#include "interfaces.hpp"
+#include "netvars.hpp"
 
 namespace ac::aimbot
 {

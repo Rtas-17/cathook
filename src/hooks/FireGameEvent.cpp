@@ -4,7 +4,11 @@
 */
 
 #include <EventLogging.hpp>
+#include <igameevents.h>
+#include <string.h>
+
 #include "HookedMethods.hpp"
+#include "config.h"
 
 namespace hooked_methods
 {

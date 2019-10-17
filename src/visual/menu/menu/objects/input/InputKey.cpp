@@ -3,6 +3,20 @@
 */
 #include <menu/object/input/InputKey.hpp>
 #include <menu/menu/special/SettingsManagerList.hpp>
+#include <string>
+#include <vector>
+
+#include "BoundingBox.hpp"
+#include "Key.hpp"
+#include "Manager.hpp"
+#include "Menu.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "SDL_keyboard.h"
+#include "SDL_keycode.h"
+#include "Settings.hpp"
+#include "colors.hpp"
+#include "tinyxml2.hpp"
 
 namespace zerokernel_inputkey
 {

@@ -2,13 +2,18 @@
   Copyright (c) 2018 nullworks. All rights reserved.
 */
 
-#include <SDL2/SDL_events.h>
-#include <menu/BaseMenuObject.hpp>
 #include <menu/tinyxml2.hpp>
 #include <menu/object/container/Box.hpp>
-#include <menu/ObjectFactory.hpp>
+#include <string>
 
-#include <menu/Menu.hpp>
+#include "BoundingBox.hpp"
+#include "Container.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "Text.hpp"
+#include "colors.hpp"
+#include "drawing.hpp"
+
 namespace zerokernel_box
 {
 

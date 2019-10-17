@@ -5,9 +5,12 @@
  *      Author: nullifiedcat
  */
 
-#include <core/logging.hpp>
 #include <sdk/netmessage.hpp>
-#include "common.hpp"
+#include <dbg.h>
+#include <igameevents.h>
+#include <stddef.h>
+#include <strtools.h>
+#include <memory>
 
 bf_write::bf_write()
 {
@@ -30,6 +33,7 @@ unsigned long g_BitWriteMasks[32][33];
 unsigned long g_ExtraMasks[33];
 
 #include "bitvec.h"
+#include "helpers.hpp"
 
 inline int BitForBitnum(int bitnum)
 {

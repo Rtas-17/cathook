@@ -5,13 +5,35 @@
  *      Author: nullifiedcat
  */
 
-#include <settings/Int.hpp>
-#include "HookTools.hpp"
 #include <hacks/AutoJoin.hpp>
+#include <cdll_int.h>
+#include <steam/isteamuser.h>
+#include <steam/steamclientpublic.h>
+#include <core/sdk.hpp>
+#include <cstdint>
+#include <string>
 
-#include "common.hpp"
+#include "HookTools.hpp"
 #include "hack.hpp"
 #include "MiscTemporary.hpp"
+#include "Bool.hpp"
+#include "CSignature.h"
+#include "CTFGCClientSystem.hpp"
+#include "CTFPartyClient.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "bytepatch.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "tfmm.hpp"
+#include "timer.hpp"
 
 namespace hacks::shared::autojoin
 {

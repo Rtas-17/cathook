@@ -3,7 +3,7 @@
 */
 
 #include <menu/object/input/Slider.hpp>
-#include <menu/Menu.hpp>
+#include <vector>
 
 namespace zerokernel
 {

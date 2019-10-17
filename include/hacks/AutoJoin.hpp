@@ -7,6 +7,7 @@
 
 #pragma once
 #include "common.hpp"
+
 namespace hacks::shared::autojoin
 {
 void updateSearch();

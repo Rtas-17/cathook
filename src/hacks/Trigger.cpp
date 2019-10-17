@@ -7,10 +7,39 @@
  */
 
 #include <hacks/Trigger.hpp>
-#include "common.hpp"
 #include <hacks/Backtrack.hpp>
 #include <PlayerTools.hpp>
 #include <settings/Bool.hpp>
+#include <cdll_int.h>
+#include <engine/ICollideable.h>
+#include <engine/IEngineTrace.h>
+#include <icliententity.h>
+#include <math.h>
+#include <mathlib/mathlib.h>
+#include <mathlib/vector.h>
+#include <core/sdk.hpp>
+#include <array>
+#include <string>
+
+#include "C_TFWeaponBaseMelee.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "classinfo.hpp"
+#include "conditions.hpp"
+#include "entitycache.hpp"
+#include "entityhitboxcache.hpp"
+#include "enums.hpp"
+#include "gameinfo.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "trace.hpp"
+#include "usercmd.hpp"
 
 namespace hacks::shared::triggerbot
 {

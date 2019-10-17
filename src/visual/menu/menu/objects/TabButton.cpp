@@ -3,6 +3,15 @@
 */
 
 #include <menu/object/TabButton.hpp>
+#include <string>
+#include <vector>
+
+#include "BoundingBox.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "TabSelection.hpp"
+#include "colors.hpp"
+#include "drawing.hpp"
 
 static settings::RVariable<rgba_t> color_selected{ "zk.style.tab-button.color.selected.background", "446498ff" };
 static settings::RVariable<rgba_t> color_separator{ "zk.style.tab-button.color.separator", "446498ff" };

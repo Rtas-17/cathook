@@ -4,11 +4,19 @@
 
 #include <menu/BaseMenuObject.hpp>
 #include <menu/Menu.hpp>
-#include <iostream>
 #include <menu/Message.hpp>
-#include <sstream>
-#include <settings/Settings.hpp>
 #include <drawing.hpp>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <iostream>
+
+#include "IMessageHandler.hpp"
+#include "KeyValue.hpp"
+#include "Registered.hpp"
+#include "SDL_events.h"
+#include "SDL_mouse.h"
+#include "tinyxml2.hpp"
 
 namespace zerokernel
 {

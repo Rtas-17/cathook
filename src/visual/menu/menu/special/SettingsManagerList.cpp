@@ -4,10 +4,20 @@
 
 #include <menu/special/SettingsManagerList.hpp>
 #include <settings/Manager.hpp>
-#include <sstream>
 #include <menu/special/VariableListEntry.hpp>
 #include <menu/special/TreeListCollapsible.hpp>
 #include <menu/menu/special/SettingsManagerList.hpp>
+#include <sstream>
+#include <algorithm>
+#include <memory>
+#include <unordered_map>
+
+#include "BaseMenuObject.hpp"
+#include "Container.hpp"
+
+namespace settings {
+class IVariable;
+}  // namespace settings
 
 zerokernel::special::SettingsManagerList::SettingsManagerList(zerokernel::Container &list) : list(list)
 {

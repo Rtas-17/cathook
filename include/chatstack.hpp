@@ -9,10 +9,11 @@
 
 #define CHATSTACK_INTERVAL 0.8f
 
-#include "config.h"
 #include <string>
 #include <stack>
 #include <functional>
+
+#include "config.h"
 
 namespace chat_stack
 {

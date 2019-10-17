@@ -15,11 +15,13 @@
 #include <glez/draw.hpp>
 #endif
 
-#include "colors.hpp"
+#include <mathlib/vmatrix.h>
 #include <string>
 #include <memory>
 #include <vector>
 #include <map>
+
+#include "colors.hpp"
 
 class CachedEntity;
 class Vector;

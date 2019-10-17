@@ -13,7 +13,20 @@
 #include <inetmessage.h>
 #include <inetmsghandler.h>
 #include <KeyValues.h>
+#include <inetchannelinfo.h>
+#include <platform.h>
+#include <string.h>
+
 #include "bitvec.h"
+
+class CLC_BaselineAck;
+class CLC_CmdKeyValues;
+class CLC_ListenEvents;
+class CLC_Move;
+class CLC_RespondCvarValue;
+class CLC_VoiceData;
+class INetChannel;
+class SVC_GetCvarValue;
 
 #define DECLARE_BASE_MESSAGE(msgtype)     \
 public:                                   \

@@ -8,6 +8,9 @@
 #pragma once
 
 #include <entitycache.hpp>
+#include <stdint.h>
+#include <initializer_list>
+
 #include "core/netvars.hpp"
 #include "gameinfo.hpp"
 

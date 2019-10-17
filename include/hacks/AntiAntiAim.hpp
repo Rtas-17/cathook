@@ -11,6 +11,8 @@
 #include <localplayer.hpp>
 #include <entitycache.hpp>
 
+class IClientEntity;
+
 namespace hacks::shared::anti_anti_aim
 {
 void createMove();

@@ -5,7 +5,15 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <cdll_int.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <stack>
+#include <string>
+
+#include "chatstack.hpp"
+#include "helpers.hpp"
+#include "interfaces.hpp"
 
 namespace chat_stack
 {

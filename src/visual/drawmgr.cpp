@@ -6,8 +6,6 @@
  */
 
 #include <MiscTemporary.hpp>
-#include <hacks/Aimbot.hpp>
-#include <hacks/hacklist.hpp>
 #if ENABLE_IMGUI_DRAWING
 #include "imgui/imrenderer.hpp"
 #elif ENABLE_GLEZ_DRAWING
@@ -15,13 +13,24 @@
 #include <glez/record.hpp>
 #include <glez/draw.hpp>
 #endif
-#include <settings/Bool.hpp>
-#include <settings/Float.hpp>
 #include <menu/GuiInterface.hpp>
-#include "common.hpp"
+#include <ctime>
+#include <random>
+#include <string>
+
 #include "visual/drawing.hpp"
 #include "hack.hpp"
-#include "menu/menu/Menu.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "SkinChanger.hpp"
+#include "colors.hpp"
+#include "config.h"
+#include "entitycache.hpp"
+#include "gameinfo.hpp"
+#include "globals.h"
+#include "localplayer.hpp"
+#include "prediction.hpp"
+#include "profiler.hpp"
 
 static settings::Boolean info_text{ "hack-info.enable", "true" };
 static settings::Boolean info_text_min{ "hack-info.minimal", "false" };

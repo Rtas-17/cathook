@@ -8,6 +8,7 @@
 #pragma once
 
 #include <core/logging.hpp>
+#include <stdint.h>
 
 class IClientEntity;
 

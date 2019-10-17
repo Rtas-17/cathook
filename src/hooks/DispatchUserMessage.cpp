@@ -4,15 +4,37 @@
 */
 
 #include <chatlog.hpp>
-#include <ucccccp.hpp>
-#include <boost/algorithm/string.hpp>
-#include <MiscTemporary.hpp>
-#include <hacks/AntiAim.hpp>
 #include <settings/Bool.hpp>
+#include <bitbuf.h>
+#include <cdll_int.h>
+#include <ctype.h>
+#include <boost/algorithm/string/case_conv.hpp>
+#include <boost/algorithm/string/predicate.hpp>
+#include <boost/algorithm/string/replace.hpp>
+#include <boost/iterator/iterator_traits.hpp>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <ostream>
+#include <string>
+#include <vector>
+
 #include "HookedMethods.hpp"
 #include "CatBot.hpp"
 #include "ChatCommands.hpp"
 #include "MiscTemporary.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "chatstack.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "ipc.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "timer.hpp"
 
 static settings::Boolean dispatch_log{ "debug.log-dispatch-user-msg", "false" };
 static settings::Boolean chat_filter_enable{ "chat.censor.enable", "false" };

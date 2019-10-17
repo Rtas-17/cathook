@@ -5,7 +5,22 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <icliententity.h>
+#include <core/sdk.hpp>
+#include <cstdint>
+#include <string>
+#include <unordered_map>
+#include <utility>
+#include <vector>
+
+#include "HookTools.hpp"
+#include "classinfo.hpp"
+#include "entitycache.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "itemtypes.hpp"
+
+struct model_t;
 
 ItemManager::ItemManager() : mapper()
 {

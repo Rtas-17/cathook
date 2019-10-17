@@ -12,7 +12,12 @@
 #include <cdll_int.h>
 #include <entitycache.hpp>
 #include <studio.h>
+#include <mathlib/mathlib.h>
+#include <mathlib/vector.h>
+
 #include <stdexcept>
+struct model_t;
+struct mstudiobbox_t;
 
 class CachedEntity;
 #define CACHE_MAX_HITBOXES 64

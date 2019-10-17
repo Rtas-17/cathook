@@ -7,7 +7,17 @@
 
 #pragma once
 
+#include <stddef.h>
+#include <array>
+#include <string>
+#include <unordered_map>
+#include <utility>
+
 #include "common.hpp"
+#include "colors.hpp"
+#include "config.h"
+
+class CachedEntity;
 
 namespace playerlist
 {

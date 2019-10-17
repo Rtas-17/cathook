@@ -3,6 +3,12 @@
 */
 
 #include <menu/object/container/List.hpp>
+#include <memory>
+#include <vector>
+
+#include "BaseMenuObject.hpp"
+#include "BoundingBox.hpp"
+#include "Container.hpp"
 
 zerokernel::List::List() : Container{}
 {

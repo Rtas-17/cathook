@@ -3,6 +3,12 @@
 */
 
 #include <menu/object/Option.hpp>
+#include <utility>
+
+#include "BoundingBox.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "colors.hpp"
 
 static settings::RVariable<rgba_t> color_hovered{ "zk.style.option.color.hover", "ff00aa" };
 

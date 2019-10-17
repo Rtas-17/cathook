@@ -7,10 +7,14 @@
 
 #pragma once
 
+#include <mathlib/vector.h>
+
 #include "common.hpp"
+#include "Registered.hpp"
 
 class ConVar;
 class IClientEntity;
+class CachedEntity;
 
 namespace hacks::shared::aimbot
 {

@@ -7,7 +7,17 @@
 #include <menu/object/container/TData.hpp>
 #include <menu/Message.hpp>
 #include <menu/menu/special/PlayerListController.hpp>
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <memory>
+#include <utility>
+
 #include "drawing.hpp"
+#include "BaseMenuObject.hpp"
+#include "BoundingBox.hpp"
+#include "KeyValue.hpp"
+#include "Rgba.hpp"
 
 /*
   Created on 26.07.18.

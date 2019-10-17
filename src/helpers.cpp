@@ -5,11 +5,57 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <basetypes.h>
+#include <bspflags.h>
+#include <cdll_int.h>
+#include <client_class.h>
+#include <convar.h>
+#include <ctype.h>
+#include <engine/ICollideable.h>
+#include <engine/IEngineTrace.h>
+#include <icliententity.h>
+#include <inputsystem/ButtonCode.h>
+#include <inputsystem/iinputsystem.h>
+#include <math.h>
+#include <mathlib/mathlib.h>
+#include <mathlib/vector.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <core/sdk.hpp>
+#include <memory>
+#include <mutex>
+#include <ostream>
+#include <string>
+#include <utility>
+#include <vector>
 
-#include <sys/mman.h>
-#include "settings/Bool.hpp"
 #include "MiscTemporary.hpp"
+#include "HUD.h"
+#include "Manager.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "classinfo.hpp"
+#include "conditions.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "entityhitboxcache.hpp"
+#include "enums.hpp"
+#include "gameinfo.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+#include "playerresource.h"
+#include "prediction.hpp"
+#include "profiler.hpp"
+#include "trace.hpp"
+#include "usercmd.hpp"
 
 static settings::Boolean tcm{ "debug.tcm", "true" };
 

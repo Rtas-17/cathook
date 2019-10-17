@@ -6,6 +6,10 @@
 
 #include "BaseMenuObject.hpp"
 
+namespace zerokernel {
+class BaseMenuObject;
+}  // namespace zerokernel
+
 namespace zerokernel::debug
 {
 

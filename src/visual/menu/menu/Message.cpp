@@ -3,6 +3,7 @@
 */
 
 #include <menu/Message.hpp>
+#include <utility>
 
 namespace zerokernel
 {

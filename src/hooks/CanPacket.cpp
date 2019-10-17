@@ -5,6 +5,8 @@
 
 #include "HookedMethods.hpp"
 
+class INetChannel;
+
 namespace hooked_methods
 {
 

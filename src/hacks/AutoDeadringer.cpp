@@ -4,8 +4,26 @@
  *  Created on: Apr 12, 2018
  *      Author: bencat07
  */
-#include <settings/Bool.hpp>
-#include "common.hpp"
+
+#include <mathlib/vector.h>
+#include <functional>
+#include <string>
+
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "classinfo.hpp"
+#include "conditions.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "timer.hpp"
+#include "usercmd.hpp"
+#include "velocity.hpp"
 
 namespace hacks::shared::deadringer
 {

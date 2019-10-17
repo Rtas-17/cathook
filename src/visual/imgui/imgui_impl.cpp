@@ -1,10 +1,20 @@
 
 #include <GL/glew.h>
+#include <float.h>
+#include <stddef.h>
+#include <stdint.h>
+
 #include "visual/imgui/imgui_impl.h"
-#include "visual/drawing.hpp"
 #include "visual/imgui/imgui.h"
 #include "visual/imgui/imgui_freetype.h"
-#include <GL/gl.h>
+#include "SDL_clipboard.h"
+#include "SDL_keyboard.h"
+#include "SDL_keycode.h"
+#include "SDL_mouse.h"
+#include "SDL_scancode.h"
+#include "SDL_stdinc.h"
+#include "SDL_timer.h"
+#include "config.h"
 
 static Uint64 g_Time                                      = 0;
 static bool g_MousePressed[3]                             = { false, false, false };

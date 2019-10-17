@@ -5,9 +5,26 @@
  *      Author: nullifiedcat
  */
 
-#include <settings/Bool.hpp>
-#include "common.hpp"
+#include <cdll_int.h>
+#include <vgui/ISurface.h>
+#include <core/sdk.hpp>
+#include <string>
+
 #include "PlayerTools.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "colors.hpp"
+#include "config.h"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "profiler.hpp"
+#include "timer.hpp"
 
 namespace hacks::tf::spyalert
 {

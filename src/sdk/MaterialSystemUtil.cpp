@@ -7,15 +7,19 @@
 //===========================================================================//
 
 #include "materialsystem/MaterialSystemUtil.h"
+
+#include <bitmap/imageformat.h>
+#include <dbg.h>
+#include <stdio.h>
+#include <vtf/vtf.h>
+
 #include "materialsystem/imaterial.h"
 #include "materialsystem/itexture.h"
 #include "materialsystem/imaterialsystem.h"
-#include "tier1/KeyValues.h"
-
-#include "common.hpp"
-
-// memdbgon must be the last include file in a .cpp file!!!
-#include "tier0/memdbgon.h"
+#include "gameinfo.hpp"
+#include "imaterialsystemfixed.h"
+#include "interfaces.hpp"
+#include "tier1/interface.h"
 
 //-----------------------------------------------------------------------------
 // Little utility class to deal with material references

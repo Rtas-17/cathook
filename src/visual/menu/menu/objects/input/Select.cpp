@@ -6,6 +6,23 @@
 #include <menu/Message.hpp>
 #include <menu/Debug.hpp>
 #include <menu/menu/special/SettingsManagerList.hpp>
+#include <stdio.h>
+#include <string.h>
+#include <memory>
+#include <utility>
+
+#include "BoundingBox.hpp"
+#include "KeyValue.hpp"
+#include "Manager.hpp"
+#include "Menu.hpp"
+#include "ModalSelect.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "Settings.hpp"
+#include "WindowManager.hpp"
+#include "colors.hpp"
+#include "drawing.hpp"
+#include "tinyxml2.hpp"
 
 namespace zerokernel_select
 {

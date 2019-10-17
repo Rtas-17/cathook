@@ -9,11 +9,24 @@
 #include <settings/Registered.hpp>
 #include <menu/wm/WindowManager.hpp>
 #include <menu/object/container/Container.hpp>
+#include <stddef.h>
+#include <memory>
+#include <string>
+#include <unordered_map>
+#include <vector>
+
 #include "Tooltip.hpp"
 #include "BoundingBox.hpp"
+#include "BaseMenuObject.hpp"
+#include "IMessageHandler.hpp"
+#include "colors.hpp"
+#include "drawing.hpp"
+#include "tinyxml2.hpp"
 
 namespace zerokernel
 {
+class BoundingBox;
+class Message;
 
 namespace resource::font
 {

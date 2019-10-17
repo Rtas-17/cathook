@@ -5,13 +5,20 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
-#include "init.hpp"
-
 #include <pwd.h>
 #include <unistd.h>
 #include <hacks/Spam.hpp>
-#include <settings/Bool.hpp>
+#include <cdll_int.h>
+#include <time.h>
+#include <ostream>
+#include <string>
+
+#include "Registered.hpp"
+#include "config.h"
+#include "interfaces.hpp"
+#include "ipc.hpp"
+#include "logging.hpp"
+#include "playerlist.hpp"
 
 namespace chatlog
 {

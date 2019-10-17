@@ -8,6 +8,16 @@
 #include <settings/Settings.hpp>
 #include <menu/object/container/Container.hpp>
 
+#include "BaseMenuObject.hpp"
+#include "colors.hpp"
+
+namespace settings {
+template <typename T> class Variable;
+}  // namespace settings
+namespace tinyxml2 {
+class XMLElement;
+}  // namespace tinyxml2
+
 namespace zerokernel
 {
 

@@ -10,9 +10,21 @@
 #include <menu/object/input/StringInput.hpp>
 #include <menu/ModalBehavior.hpp>
 #include <menu/object/container/ModalContainer.hpp>
+#include <stddef.h>
+#include <vector>
+
+#include "colors.hpp"
+
+namespace settings {
+template <typename T> class Variable;
+}  // namespace settings
+namespace tinyxml2 {
+class XMLElement;
+}  // namespace tinyxml2
 
 namespace zerokernel
 {
+class Message;
 
 class ModalColorSelect : public ModalContainer
 {

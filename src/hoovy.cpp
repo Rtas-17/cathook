@@ -5,7 +5,18 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <const.h>
+#include <icliententitylist.h>
+
+#include "HookTools.hpp"
+#include "classinfo.hpp"
+#include "entitycache.hpp"
+#include "gameinfo.hpp"
+#include "hoovy.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
 
 static bool hoovy_list[33] = { 0 };
 

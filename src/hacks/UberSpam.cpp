@@ -5,9 +5,20 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
 #include <hacks/UberSpam.hpp>
-#include <settings/Int.hpp>
+
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "String.hpp"
+#include "chatstack.hpp"
+#include "classinfo.hpp"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "textfile.hpp"
 
 namespace hacks::tf::uberspam
 {

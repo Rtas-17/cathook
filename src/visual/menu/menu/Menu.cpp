@@ -3,22 +3,21 @@
 */
 
 #include <menu/Menu.hpp>
-#include <menu/object/container/Box.hpp>
-#include <menu/object/input/Checkbox.hpp>
-#include <menu/object/container/TabSelection.hpp>
-#include <menu/object/container/TabContainer.hpp>
-#include <menu/object/input/InputKey.hpp>
-#include <menu/object/input/Slider.hpp>
-#include <menu/object/input/ColorSelector.hpp>
-#include <menu/object/input/Select.hpp>
 #include <menu/special/SettingsManagerList.hpp>
-#include <menu/special/PlayerListController.hpp>
-#include <menu/object/container/ScrollableList.hpp>
-#include <fstream>
-#include <iostream>
 #include <menu/menu/Menu.hpp>
 #include <config.h>
-#include <core/logging.hpp>
+#include <stdio.h>
+#include <string.h>
+#include <utility>
+
+#include "Message.hpp"
+#include "SDL_events.h"
+#include "SDL_mouse.h"
+#include "WindowManager.hpp"
+
+namespace zerokernel {
+class BoundingBox;
+}  // namespace zerokernel
 
 static void recursiveXmlResolveIncludes(const std::string &directory, tinyxml2::XMLElement *element)
 {

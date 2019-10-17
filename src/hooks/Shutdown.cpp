@@ -3,10 +3,24 @@
   Copyright (c) 2018 nullworks. All rights reserved.
 */
 
-#include <hacks/hacklist.hpp>
 #include <settings/Bool.hpp>
+#include <stdlib.h>
+#include <string.h>
+#include <string>
+#include <vector>
+
 #include "HookedMethods.hpp"
 #include "MiscTemporary.hpp"
+#include "AutoJoin.hpp"
+#include "Registered.hpp"
+#include "config.h"
+#include "globals.h"
+#include "ipc.hpp"
+#include "logging.hpp"
+#include "textfile.hpp"
+#include "tfmm.hpp"
+
+class INetChannel;
 
 settings::Boolean die_if_vac{ "misc.die-if-vac", "false" };
 static settings::Boolean autoabandon{ "misc.auto-abandon", "false" };

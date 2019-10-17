@@ -4,8 +4,25 @@
  *	Created on: October 30, 2018
  */
 
-#include <settings/Int.hpp>
-#include "common.hpp"
+#include <cdll_int.h>
+#include <igameevents.h>
+#include <stdlib.h>
+#include <string>
+#include <vector>
+
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "String.hpp"
+#include "chatstack.hpp"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "playerresource.h"
+#include "textfile.hpp"
 
 namespace hacks::shared::dominatesay
 {

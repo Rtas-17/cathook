@@ -3,7 +3,18 @@
   Copyright (c) 2018 nullworks. All rights reserved.
 */
 
+#include <cdll_int.h>
+#include <checksum_md5.h>
+#include <core/sdk.hpp>
+#include <unordered_map>
+
 #include "HookedMethods.hpp"
+#include "crits.hpp"
+#include "interfaces.hpp"
+#include "offsets.hpp"
+#include "usercmd.hpp"
+
+class IInput;
 
 namespace hooked_methods
 {

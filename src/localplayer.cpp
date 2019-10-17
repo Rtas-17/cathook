@@ -5,7 +5,22 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <cdll_int.h>
+#include <mathlib/vector.h>
+#include <core/sdk.hpp>
+#include <string>
+
+#include "C_BaseCombatWeapon.hpp"
+#include "classinfo.hpp"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+#include "usercmd.hpp"
 
 CatCommand printfov("fov_print", "Dump achievements to file (development)", []() {
     if (CE_GOOD(LOCAL_E))

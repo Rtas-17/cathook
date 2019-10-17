@@ -7,8 +7,15 @@
 
 #include <globals.h>
 #include <settings/Bool.hpp>
+#include <unistd.h>
+#include <core/sdk.hpp>
+#include <atomic>
+#include <string>
 
-#include "common.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "interfaces.hpp"
+#include "logging.hpp"
 
 static settings::Boolean global_enable{ "hack.enable", "true" };
 

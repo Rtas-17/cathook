@@ -6,12 +6,42 @@
  */
 
 #include <hacks/CatBot.hpp>
-#include <settings/Bool.hpp>
-#include "ipc.hpp"
+#include <bits/exception.h>
+#include <cdll_int.h>
+#include <convar.h>
+#include <icliententitylist.h>
+#include <inetchannelinfo.h>
+#include <mathlib/vector.h>
+#include <pthread.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <steam/isteamuser.h>
+#include <steam/steamclientpublic.h>
+#include <string.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <stack>
+#include <string>
+#include <vector>
 
-#include "common.hpp"
+#include "ipc.hpp"
 #include "hack.hpp"
 #include "hitrate.hpp"
+#include "HookedMethods.hpp"
+#include "Registered.hpp"
+#include "SimpleIPC/ipcb.hpp"
+#include "String.hpp"
+#include "cvwrapper.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+#include "playerlist.hpp"
+#include "playerresource.h"
+
+class IClientEntity;
 
 #if ENABLE_IPC
 

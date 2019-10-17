@@ -7,6 +7,7 @@
 
 #pragma once
 
+#include <stdint.h>
 #include <unordered_map>
 #include <string>
 #include <vector>
@@ -130,6 +131,7 @@ enum k_EItemType
 };
 
 class CachedEntity;
+
 typedef bool (*ItemCheckerFn)(CachedEntity *);
 typedef k_EItemType (*ItemSpecialMapperFn)(CachedEntity *);
 

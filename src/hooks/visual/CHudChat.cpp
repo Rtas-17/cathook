@@ -1,5 +1,23 @@
+#include <cdll_int.h>
+#include <stdarg.h>
+#include <stdio.h>
+#include <array>
+#include <memory>
+#include <string>
+#include <vector>
+
 #include "HookedMethods.hpp"
 #include "MiscTemporary.hpp"
+#include "Bool.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "timer.hpp"
+
+class CHudBaseChat;
 
 namespace hooked_methods
 {

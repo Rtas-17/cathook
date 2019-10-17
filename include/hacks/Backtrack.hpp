@@ -6,8 +6,17 @@
  */
 
 #pragma once
-#include "common.hpp"
 #include <boost/circular_buffer.hpp>
+#include <mathlib/mathlib.h>
+#include <mathlib/vector.h>
+#include <boost/move/utility_core.hpp>
+#include <array>
+
+#include "common.hpp"
+#include "Registered.hpp"
+
+class CachedEntity;
+class INetChannel;
 
 namespace hacks::shared::backtrack
 {

@@ -5,8 +5,18 @@
 #pragma once
 
 #include <menu/object/container/Table.hpp>
-#include <functional>
 #include <menu/object/container/TRow.hpp>
+#include <functional>
+#include <string>
+
+#include "IMessageHandler.hpp"
+#include "colors.hpp"
+
+namespace zerokernel {
+class Message;
+class TRow;
+class Table;
+}  // namespace zerokernel
 
 namespace zerokernel::special
 {

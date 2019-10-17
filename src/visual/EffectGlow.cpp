@@ -9,7 +9,48 @@
 #include <MiscTemporary.hpp>
 #include <hacks/Aimbot.hpp>
 #include <settings/Bool.hpp>
+#include <bitmap/imageformat.h>
+#include <cdll_int.h>
+#include <client_class.h>
+#include <const.h>
+#include <engine/ivmodelrender.h>
+#include <icliententity.h>
+#include <icliententitylist.h>
+#include <materialsystem/imaterial.h>
+#include <materialsystem/imaterialsystem.h>
+#include <materialsystem/itexture.h>
+#include <refcount.h>
+#include <stdint.h>
+#include <steam/steamtypes.h>
+#include <string.h>
+#include <texture_group_names.h>
+#include <vtf/vtf.h>
+#include <core/sdk.hpp>
+#include <memory>
+#include <string>
+
 #include "common.hpp"
+#include "C_BaseCombatWeapon.hpp"
+#include "C_TFWeaponBase.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "classinfo.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "gameinfo.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "imaterialsystemfixed.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "itemtypes.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+#include "playerlist.hpp"
 
 IMaterialSystem *materials = nullptr;
 

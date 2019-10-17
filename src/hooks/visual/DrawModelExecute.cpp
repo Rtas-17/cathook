@@ -5,11 +5,34 @@
 
 #include <MiscTemporary.hpp>
 #include <settings/Bool.hpp>
-#include "HookedMethods.hpp"
-#include "Backtrack.hpp"
 #include <visual/EffectChams.hpp>
 #include <visual/EffectGlow.hpp>
-#include "AntiAim.hpp"
+#include <cdll_int.h>
+#include <engine/ivmodelrender.h>
+#include <icliententity.h>
+#include <iclientrenderable.h>
+#include <iclientunknown.h>
+#include <materialsystem/MaterialSystemUtil.h>
+#include <materialsystem/imaterialsystem.h>
+#include <refcount.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <memory>
+#include <string>
+#include <vector>
+
+#include "HookedMethods.hpp"
+#include "Backtrack.hpp"
+#include "Registered.hpp"
+#include "colors.hpp"
+#include "common.hpp"
+#include "entitycache.hpp"
+#include "globals.h"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "profiler.hpp"
+
+struct matrix3x4_t;
 
 static settings::Boolean no_arms{ "remove.arms", "false" };
 static settings::Boolean no_hats{ "remove.hats", "false" };

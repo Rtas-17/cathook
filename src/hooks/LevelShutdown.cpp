@@ -3,9 +3,16 @@
   Copyright (c) 2018 nullworks. All rights reserved.
 */
 
-#include <hacks/Aimbot.hpp>
-#include <hacks/hacklist.hpp>
+#include <time.h>
+
 #include "HookedMethods.hpp"
+#include "HookTools.hpp"
+#include "SimpleIPC/ipcb.hpp"
+#include "chatstack.hpp"
+#include "config.h"
+#include "globals.h"
+#include "ipc.hpp"
+#include "playerlist.hpp"
 
 namespace hooked_methods
 {

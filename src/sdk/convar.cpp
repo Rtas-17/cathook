@@ -9,7 +9,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "basetypes.h"
+#include <assert.h>
+#include <iconvar.h>
+#include <math.h>
+#include <utlstring.h>
+#include <utlvector.h>
+
 #include "tier1/convar.h"
 #include "tier1/strtools.h"
 #include "tier1/characterset.h"
@@ -19,10 +24,10 @@
 #include "icvar.h"
 #include "tier0/dbg.h"
 #include "Color.h"
+#include "tier0/mem.h"
 #if defined(_X360)
 #include "xbox/xbox_console.h"
 #endif
-#include "tier0/memdbgon.h"
 
 #ifndef NDEBUG
 // Comment this out when we release.
@@ -30,7 +35,6 @@
 #endif
 
 #include <core/logging.hpp>
-#include <core/interfaces.hpp>
 
 //-----------------------------------------------------------------------------
 // Statically constructed list of ConCommandBases,

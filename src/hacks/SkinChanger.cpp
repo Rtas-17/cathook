@@ -5,14 +5,37 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
-#include "MiscTemporary.hpp"
-
-#include <sys/dir.h>
 #include <sys/stat.h>
 #include <hacks/SkinChanger.hpp>
 #include <settings/Bool.hpp>
-#include <boost/functional/hash.hpp>
+#include <bits/exception.h>
+#include <cdll_int.h>
+#include <client_class.h>
+#include <convar.h>
+#include <dirent.h>
+#include <icliententity.h>
+#include <icliententitylist.h>
+#include <stdlib.h>
+#include <core/sdk.hpp>
+#include <array>
+#include <istream>
+#include <stdexcept>
+#include <type_traits>
+#include <utility>
+
+#include "MiscTemporary.hpp"
+#include "CSignature.h"
+#include "C_BaseCombatWeapon.hpp"
+#include "Registered.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "helpers.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
 
 namespace hacks::tf2::skinchanger
 {

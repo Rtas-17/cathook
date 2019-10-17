@@ -7,11 +7,14 @@
 
 #pragma once
 
+#include <stdint.h>
 #include <string>
 #include <vector>
+
 #include "config.h"
 
 struct link_map;
+
 typedef void *(*fn_CreateInterface_t)(const char *, int *);
 
 namespace sharedobj

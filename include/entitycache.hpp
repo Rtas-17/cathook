@@ -7,8 +7,6 @@
 
 #pragma once
 
-#include "entityhitboxcache.hpp"
-#include "averager.hpp"
 #include <mathlib/vector.h>
 #include <mathlib/mathlib.h>
 #include <icliententity.h>
@@ -17,19 +15,31 @@
 #include <enums.hpp>
 #include <core/interfaces.hpp>
 #include <itemtypes.hpp>
-#include "localplayer.hpp"
 #include <core/netvars.hpp>
+#include <float.h>
+#include <stdint.h>
+#include <optional>
+#include <stdexcept>
+
+#include "entityhitboxcache.hpp"
+#include "averager.hpp"
+#include "localplayer.hpp"
 #include "playerresource.h"
 #include "globals.h"
 #include "classinfo/classinfo.hpp"
 #include "classinfo/tf2.gen.hpp"
-#include "client_class.h"
 
+#include "client_class.h"
 struct matrix3x4_t;
 
 class IClientEntity;
 struct player_info_s;
 struct model_t;
+class CachedEntity;
+namespace hitbox_cache {
+class EntityHitboxCache;
+}  // namespace hitbox_cache
+
 struct mstudiohitboxset_t;
 struct mstudiobbox_t;
 

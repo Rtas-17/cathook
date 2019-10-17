@@ -1,9 +1,13 @@
 #include <menu/BaseMenuObject.hpp>
 #include <menu/wm/WindowCloseButton.hpp>
-
-#include <menu/wm/WMWindow.hpp>
 #include <config.h>
+#include <string>
+
 #include "drawing.hpp"
+#include "BoundingBox.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "colors.hpp"
 
 /*
   Created on 07.07.18.

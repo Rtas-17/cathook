@@ -2,9 +2,13 @@
 
 #include <GL/gl.h>
 #include <SDL2/SDL.h>
+
 #include "imgui.h"
+#include "SDL_events.h"
+#include "SDL_video.h"
 
 struct SDL_Window;
+
 typedef union SDL_Event SDL_Event;
 
 IMGUI_API void ImGui_Impl_Render(ImDrawData *draw_data);

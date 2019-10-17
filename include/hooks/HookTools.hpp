@@ -1,9 +1,13 @@
 #pragma once
 
-#include "core/profiler.hpp"
-#include "functional"
 #include <set>
 #include <array>
+#include <functional>
+#include <string>
+
+#include "core/profiler.hpp"
+#include "functional"
+#include "config.h"
 
 namespace EC
 {

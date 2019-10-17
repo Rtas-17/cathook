@@ -5,7 +5,18 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include "classinfo.hpp"
+#include "css.gen.hpp"
+#include "dynamic.gen.hpp"
+#include "gameinfo.hpp"
+#include "hl2dm.gen.hpp"
+#include "logging.hpp"
+#include "tf2.gen.hpp"
+#include "tf2c.gen.hpp"
+
+namespace client_classes {
+class dummy;
+}  // namespace client_classes
 
 client_classes::dummy *client_class_list = nullptr;
 

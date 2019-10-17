@@ -4,8 +4,13 @@
 
 #pragma once
 
-#include "config.h"
 #include <optional>
+
+#include "config.h"
+
+namespace colors {
+struct rgba_t;
+}  // namespace colors
 
 #if ENABLE_VISUALS
 #include <colors.hpp>

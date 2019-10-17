@@ -8,6 +8,7 @@
 #include <string>
 #include <functional>
 #include <atomic>
+#include <vector>
 
 #if ENABLE_VISUALS
 #include <drawing.hpp>

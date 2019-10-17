@@ -5,8 +5,32 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
-#include <settings/Bool.hpp>
+#include <cdll_int.h>
+#include <inetchannelinfo.h>
+#include <math.h>
+#include <mathlib/mathlib.h>
+#include <mathlib/vector.h>
+#include <functional>
+#include <string>
+
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "classinfo.hpp"
+#include "colors.hpp"
+#include "config.h"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "usercmd.hpp"
+#include "velocity.hpp"
 
 namespace hacks::tf::autoreflect
 {

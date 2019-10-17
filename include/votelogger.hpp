@@ -7,7 +7,10 @@
 
 #pragma once
 
+#include <string>
+
 #include "string"
+
 class bf_read;
 
 namespace votelogger

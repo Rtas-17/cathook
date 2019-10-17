@@ -9,6 +9,8 @@
 
 #include "common.hpp"
 
+class ConVar;
+
 /*
  * HECK off F1ssi0N
  * I won't make NETWORK HOOKS to deal with this SHIT

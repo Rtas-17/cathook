@@ -4,6 +4,8 @@
 
 #pragma once
 
+#include <stddef.h>
+
 #include "imgui.h" // IMGUI_API, ImFontAtlas
 
 namespace ImGuiFreeType

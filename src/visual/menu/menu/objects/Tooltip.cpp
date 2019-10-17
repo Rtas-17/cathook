@@ -3,8 +3,16 @@
 */
 
 #include <menu/Tooltip.hpp>
-
 #include <menu/Menu.hpp>
+
+#include "BaseMenuObject.hpp"
+#include "BoundingBox.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "SDL_mouse.h"
+#include "Text.hpp"
+#include "Utility.hpp"
+#include "colors.hpp"
 
 namespace zerokernel_tooltip
 {

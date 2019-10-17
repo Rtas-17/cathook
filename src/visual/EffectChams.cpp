@@ -8,8 +8,41 @@
 #include <visual/EffectChams.hpp>
 #include <MiscTemporary.hpp>
 #include <settings/Bool.hpp>
+#include <cdll_int.h>
+#include <client_class.h>
+#include <engine/ivmodelrender.h>
+#include <icliententity.h>
+#include <icliententitylist.h>
+#include <materialsystem/imaterial.h>
+#include <materialsystem/imaterialsystem.h>
+#include <refcount.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <core/sdk.hpp>
+#include <string>
+
 #include "common.hpp"
-#include "Backtrack.hpp"
+#include "C_BaseCombatWeapon.hpp"
+#include "C_TFWeaponBase.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "ScreenSpaceEffects.h"
+#include "classinfo.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "itemtypes.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+#include "playerlist.hpp"
+#include "profiler.hpp"
+#include "timer.hpp"
 
 namespace effect_chams
 {

@@ -3,12 +3,21 @@
 */
 
 #include <settings/SettingsIO.hpp>
+#include <ctype.h>
+#include <stdio.h>
 #include <fstream>
-#include <sstream>
+#include <algorithm>
+#include <array>
+#include <unordered_map>
+#include <utility>
+#include <vector>
+
 #include "core/logging.hpp"
 #include "interfaces.hpp"
 #include "icvar.h"
 #include "MiscTemporary.hpp"
+#include "Manager.hpp"
+#include "Settings.hpp"
 
 settings::SettingsWriter::SettingsWriter(settings::Manager &manager) : manager(manager)
 {

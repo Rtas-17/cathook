@@ -1,5 +1,19 @@
-#include "common.hpp"
+#include <cdll_int.h>
+#include <engine/IEngineSound.h>
+#include <engine/SndInfo.h>
+#include <mathlib/vector.h>
+#include <utlvector.h>
+#include <map>
+#include <utility>
+
 #include "soundcache.hpp"
+#include "HookTools.hpp"
+#include "entitycache.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "playerresource.h"
+#include "timer.hpp"
 
 struct CSndInfo_t
 {

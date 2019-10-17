@@ -5,8 +5,29 @@
 
 #include <settings/Registered.hpp>
 #include <MiscTemporary.hpp>
+#include <cdll_int.h>
+#include <convar.h>
+#include <stdlib.h>
+#include <string.h>
+#include <vgui/IPanel.h>
+#include <core/sdk.hpp>
+#include <cstdint>
+#include <functional>
+#include <string>
+
 #include "HookedMethods.hpp"
 #include "CatBot.hpp"
+#include "CSignature.h"
+#include "CTFGCClientSystem.hpp"
+#include "Settings.hpp"
+#include "bytepatch.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "drawing.hpp"
+#include "globals.h"
+#include "interfaces.hpp"
+#include "logging.hpp"
+#include "timer.hpp"
 
 static settings::Int software_cursor_mode{ "visual.software-cursor-mode", "0" };
 static settings::Boolean debug_log_panel_names{ "debug.log-panels", "false" };

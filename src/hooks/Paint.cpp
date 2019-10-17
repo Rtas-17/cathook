@@ -5,12 +5,25 @@
  *      Author: nullifiedcat
  */
 
-#include <hacks/hacklist.hpp>
-#include <online/Online.hpp>
-#include <settings/Bool.hpp>
-#include "common.hpp"
+#include <cdll_int.h>
+#include <ienginevgui.h>
+#include <memory>
+#include <mutex>
+#include <stack>
+#include <string>
+
 #include "hitrate.hpp"
 #include "hack.hpp"
+#include "HookTools.hpp"
+#include "HookedMethods.hpp"
+#include "Registered.hpp"
+#include "config.h"
+#include "globals.h"
+#include "interfaces.hpp"
+#include "ipc.hpp"
+#include "profiler.hpp"
+#include "timer.hpp"
+
 extern settings::Boolean die_if_vac;
 static Timer checkmmban{};
 namespace hooked_methods

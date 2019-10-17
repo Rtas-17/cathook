@@ -8,6 +8,12 @@
 #include <core/cvwrapper.hpp>
 #include <helpers.hpp>
 #include <common.hpp>
+#include <string.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <stdexcept>
+
+#include "interfaces.hpp"
 
 std::vector<CatCommand *> &commandRegistrationArray()
 {

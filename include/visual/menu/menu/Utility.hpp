@@ -5,8 +5,11 @@
 
 #pragma once
 
-#include <string>
 #include <drawing.hpp>
+#include <math.h>
+#include <string>
+
+#include "colors.hpp"
 
 namespace utility
 {

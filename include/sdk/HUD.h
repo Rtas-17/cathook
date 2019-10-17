@@ -9,6 +9,7 @@
 
 #include <core/logging.hpp>
 #include <utlvector.h>
+
 #include "core/vfunc.hpp"
 
 class CHudBaseChat

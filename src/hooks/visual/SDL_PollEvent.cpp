@@ -4,8 +4,18 @@
 */
 
 #include <menu/GuiInterface.hpp>
+#include <cdll_int.h>
+
 #include "HookedMethods.hpp"
 #include "MiscTemporary.hpp"
+#include "config.h"
+#include "drawing.hpp"
+#include "globals.h"
+#include "interfaces.hpp"
+#include "timer.hpp"
+
+union SDL_Event;
+
 namespace hooked_methods
 {
 

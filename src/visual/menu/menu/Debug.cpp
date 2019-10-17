@@ -5,6 +5,15 @@
 #include <menu/object/container/Container.hpp>
 #include <menu/wm/WindowContainer.hpp>
 #include <menu/object/container/TabContainer.hpp>
+#include <stdio.h>
+#include <memory>
+#include <typeinfo>
+#include <vector>
+
+#include "BaseMenuObject.hpp"
+#include "BoundingBox.hpp"
+#include "TabSelection.hpp"
+#include "WMWindow.hpp"
 
 zerokernel::debug::UiTreeGraph::UiTreeGraph(zerokernel::BaseMenuObject *object, int depth) : depth(depth)
 {

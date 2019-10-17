@@ -8,10 +8,28 @@
 #include <hacks/ac/aimbot.hpp>
 #include <hacks/ac/antiaim.hpp>
 #include <hacks/ac/bhop.hpp>
-#include <settings/Bool.hpp>
-#include "common.hpp"
+#include <cdll_int.h>
+#include <igameevents.h>
+#include <iserver.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <stack>
+#include <string>
+#include <unordered_map>
+
 #include "PlayerTools.hpp"
 #include "hack.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "colors.hpp"
+#include "config.h"
+#include "entitycache.hpp"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "playerlist.hpp"
 
 namespace hacks::shared::anticheat
 {

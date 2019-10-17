@@ -5,7 +5,17 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <convar.h>
+#include <stdlib.h>
+#include <string>
+
+#include "conditions.hpp"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "helpers.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
 
 static CatCommand dump_conditions("debug_conditions", "Shows conditions for entity #", [](const CCommand &args) {
     int id = atoi(args.Arg(1));

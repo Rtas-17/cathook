@@ -1,5 +1,9 @@
-#include <settings/Bool.hpp>
-#include "common.hpp"
+
+#include "hooks.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "logging.hpp"
+#include "offsets.hpp"
 
 namespace hacks::shared::purebypass
 {

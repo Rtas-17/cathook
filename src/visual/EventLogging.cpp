@@ -1,14 +1,26 @@
 /*
   Created on 29.07.18.
 */
-#include "config.h"
 #include <EventLogging.hpp>
 #include <settings/Bool.hpp>
 #include <helpers.hpp>
+#include <cdll_int.h>
+#include <igameevents.h>
+#include <string.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <string>
+#include <vector>
+
+#include "config.h"
+#include "Registered.hpp"
+#include "String.hpp"
+#include "entitycache.hpp"
+#include "interfaces.hpp"
+#include "logging.hpp"
 #if ENABLE_VISUALS
 #include <colors.hpp>
 #include <init.hpp>
-#include "KeyValues.h"
 
 namespace event_logging
 {

@@ -8,19 +8,20 @@
 #pragma once
 
 #include "config.h"
-
 #include "dummy.gen.hpp"
-
 #include "tf2.gen.hpp"
 #include "tf2c.gen.hpp"
 #include "hl2dm.gen.hpp"
 #include "css.gen.hpp"
 #include "dynamic.gen.hpp"
-
 #include "tf2_constexpr.gen.hpp"
 #include "tf2c_constexpr.gen.hpp"
 #include "hl2dm_constexpr.gen.hpp"
 #include "css_constexpr.gen.hpp"
+
+namespace client_classes {
+class dummy;
+}  // namespace client_classes
 
 void InitClassTable();
 

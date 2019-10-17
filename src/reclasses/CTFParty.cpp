@@ -5,8 +5,11 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <stdint.h>
+
 #include "core/e8call.hpp"
+#include "CSignature.h"
+#include "CTFParty.hpp"
 
 re::CTFParty *re::CTFParty::GetParty()
 {

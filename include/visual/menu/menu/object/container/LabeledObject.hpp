@@ -8,9 +8,17 @@
 #include <menu/object/Text.hpp>
 #include <menu/ObjectFactory.hpp>
 #include <menu/object/container/Container.hpp>
+#include <memory>
+#include <string>
+
+namespace tinyxml2 {
+class XMLElement;
+}  // namespace tinyxml2
 
 namespace zerokernel
 {
+class BaseMenuObject;
+class Text;
 
 class LabeledObject : public Container
 {

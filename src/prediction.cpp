@@ -4,8 +4,50 @@
  *  Created on: Dec 5, 2016
  *      Author: nullifiedcat
  */
-#include "common.hpp"
-#include <settings/Bool.hpp>
+
+#include <bspflags.h>
+#include <cdll_int.h>
+#include <checksum_md5.h>
+#include <const.h>
+#include <convar.h>
+#include <engine/ICollideable.h>
+#include <engine/IEngineTrace.h>
+#include <ext/alloc_traits.h>
+#include <icliententity.h>
+#include <inetchannelinfo.h>
+#include <math.h>
+#include <mathlib/vector.h>
+#include <string.h>
+#include <core/sdk.hpp>
+#include <functional>
+#include <memory>
+#include <optional>
+#include <string>
+#include <utility>
+#include <vector>
+
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "colors.hpp"
+#include "conditions.hpp"
+#include "config.h"
+#include "crits.hpp"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "prediction.hpp"
+#include "profiler.hpp"
+#include "trace.hpp"
+#include "usercmd.hpp"
+#include "velocity.hpp"
+
+class CBasePlayer;
+class IPrediction;
 
 static settings::Boolean debug_enginepred{ "debug.engine-pred-others", "false" };
 static settings::Boolean debug_pp_extrapolate{ "debug.pp-extrapolate", "false" };

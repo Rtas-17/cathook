@@ -5,6 +5,16 @@
  *      Author: UNKN0WN
  */
 
+#include <mathlib/mathlib.h> // SinCos
+#include <GL/gl.h>
+#include <float.h>
+#include <stddef.h>
+#include <fstream>           // Loading files
+#include <stack>             // Loading textures
+#include <algorithm>
+#include <stdexcept>
+#include <vector>
+
 #include "visual/imgui/imrenderer.hpp"
 #include "core/logging.hpp"
 #include "visual/SDLHooks.hpp"
@@ -14,9 +24,6 @@
 #include "visual/imgui/imgui_impl.h"
 #include "visual/imgui/imgui_internal.h"
 #include "visual/picopng.hpp"
-#include <fstream>           // Loading files
-#include <mathlib/mathlib.h> // SinCos
-#include <stack>             // Loading textures
 
 ImDrawListSharedData shared{};
 ImDrawList bufferA{ &shared };

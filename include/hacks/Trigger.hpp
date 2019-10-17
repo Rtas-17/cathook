@@ -9,6 +9,9 @@
 
 #include "common.hpp"
 
+class CachedEntity;
+class Vector;
+
 namespace hacks::shared::triggerbot
 {
 

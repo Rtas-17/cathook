@@ -3,8 +3,12 @@
   Copyright (c) 2018 nullworks. All rights reserved.
 */
 
-#include <settings/Bool.hpp>
+#include <string>
+
 #include "HookedMethods.hpp"
+#include "Registered.hpp"
+
+class IUniformRandomStream;
 
 static settings::Boolean medal_flip{ "visual.medal-flip", "false" };
 

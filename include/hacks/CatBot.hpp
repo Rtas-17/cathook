@@ -8,6 +8,14 @@
 #pragma once
 
 #include "common.hpp"
+#include "Registered.hpp"
+#include "config.h"
+#include "timer.hpp"
+
+class CachedEntity;
+namespace ipc {
+struct user_data_s;
+}  // namespace ipc
 
 namespace hacks::shared::catbot
 {

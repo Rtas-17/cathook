@@ -3,8 +3,29 @@
  * CritSay.cpp
  * Read if gay
  */
-#include <settings/Int.hpp>
-#include "common.hpp"
+
+#include <cdll_int.h>
+#include <igameevents.h>
+#include <stdlib.h>
+#include <string>
+#include <unordered_map>
+#include <utility>
+#include <vector>
+
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "String.hpp"
+#include "chatstack.hpp"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "playerresource.h"
+#include "textfile.hpp"
+#include "timer.hpp"
 
 namespace hacks::shared::critsay
 {

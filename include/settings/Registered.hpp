@@ -4,10 +4,16 @@
 
 #pragma once
 
+#include <string>
+
 #include "Settings.hpp"
+#include "colors.hpp"
+#include "config.h"
 
 namespace settings
 {
+class IVariable;
+struct Key;
 
 void registerVariable(IVariable &variable, std::string name);
 

@@ -9,6 +9,7 @@
 #include <boost/circular_buffer.hpp>
 #include <time.h>
 #include <mathlib/vector.h>
+#include <deque>
 
 class Vector;
 class CUserCmd;

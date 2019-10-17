@@ -6,6 +6,8 @@
 
 #include <unordered_map>
 #include <vector>
+#include <string>
+
 #include "Settings.hpp"
 
 /*
@@ -23,6 +25,7 @@
 
 namespace settings
 {
+class IVariable;
 
 class Manager
 {

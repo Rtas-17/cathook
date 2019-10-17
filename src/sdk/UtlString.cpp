@@ -6,13 +6,15 @@
 
 #define __STDC_LIMIT_MACROS
 #include <stdint.h>
-
 #include <tier1/utlstring.h>
 #include <tier1/strtools.h>
-#include <ctype.h>
+#include <basetypes.h>
+#include <dbg.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
 
-// NOTE: This has to be the last file included!
-#include "tier0/memdbgon.h"
+#include "tier0/mem.h"
 
 //-----------------------------------------------------------------------------
 // Simple string class.

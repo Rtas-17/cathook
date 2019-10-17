@@ -2,9 +2,12 @@
   Copyright (c) 2018 nullworks. All rights reserved.
 */
 
-#include <sstream>
 #include <drawing.hpp>
-#include <menu/Menu.hpp>
+#include <sstream>
+#include <string>
+
+#include "Utility.hpp"
+#include "colors.hpp"
 
 namespace utility
 {

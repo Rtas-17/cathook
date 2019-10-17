@@ -1,5 +1,10 @@
-#include "common.hpp"
+#include <algorithm>
+#include <vector>
+
 #include "HookTools.hpp"
+#include "cvwrapper.hpp"
+#include "logging.hpp"
+#include "profiler.hpp"
 
 namespace EC
 {

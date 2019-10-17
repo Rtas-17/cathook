@@ -89,6 +89,7 @@ distribution.
     }
 #elif defined(ANDROID_NDK)
 #include <android/log.h>
+
 #define TIXMLASSERT(x)                                                                          \
     if (!(x))                                                                                   \
     {                                                                                           \
@@ -96,6 +97,7 @@ distribution.
     }
 #else
 #include <assert.h>
+
 #define TIXMLASSERT assert
 #endif
 #else

@@ -5,8 +5,22 @@
 #include <menu/object/input/ColorSelector.hpp>
 #include <menu/object/input/InputKey.hpp>
 #include <menu/object/input/Spinner.hpp>
-#include <menu/menu/special/SettingsManagerList.hpp>
 #include <menu/menu/special/VariableListEntry.hpp>
+#include <stdio.h>
+#include <utility>
+#include <vector>
+
+#include "Bool.hpp"
+#include "BoundingBox.hpp"
+#include "Float.hpp"
+#include "Int.hpp"
+#include "Key.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "String.hpp"
+#include "Text.hpp"
+#include "TreeListBaseEntry.hpp"
+#include "colors.hpp"
 
 static settings::RVariable<rgba_t> marked_color{ "zk.color.variable-list.color.registered", "ffff00" };
 

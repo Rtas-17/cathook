@@ -5,9 +5,21 @@
  *      Author: bencat07
  */
 #include <settings/Bool.hpp>
-#include "common.hpp"
+#include <cdll_int.h>
+#include <inetchannelinfo.h>
+#include <math.h>
+#include <minmax.h>
+#include <stdlib.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <memory>
+#include <string>
+
 #include "SeedPrediction.hpp"
-#include "reclasses.hpp"
+#include "C_TEFireBullets.hpp"
+#include "Registered.hpp"
+#include "interfaces.hpp"
+#include "logging.hpp"
 
 namespace hacks::tf2::seedprediction
 {

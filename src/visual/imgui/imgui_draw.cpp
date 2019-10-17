@@ -26,12 +26,16 @@ Index of this file:
 #endif
 
 #include "visual/imgui/imgui.h"
+#include "imconfig.h"
 #ifndef IMGUI_DEFINE_MATH_OPERATORS
 #define IMGUI_DEFINE_MATH_OPERATORS
 #endif
-#include "visual/imgui/imgui_internal.h"
-
 #include <stdio.h> // vsnprintf, sscanf, printf
+#include <alloca.h>
+#include <float.h>
+#include <string.h>
+
+#include "visual/imgui/imgui_internal.h"
 #if !defined(alloca)
 #if defined(__GLIBC__) || defined(__sun) || defined(__CYGWIN__) || defined(__APPLE__)
 #include <alloca.h> // alloca (glibc uses <alloca.h>. Note that Cygwin may have _WIN32 defined, so the order matters here)

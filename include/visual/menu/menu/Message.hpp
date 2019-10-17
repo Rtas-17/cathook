@@ -5,12 +5,13 @@
 
 #pragma once
 
-#include <string>
 #include <menu/BaseMenuObject.hpp>
 #include <menu/KeyValue.hpp>
+#include <string>
 
 namespace zerokernel
 {
+class BaseMenuObject;
 
 class Message
 {

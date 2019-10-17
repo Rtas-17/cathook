@@ -6,8 +6,11 @@
 
 #include <menu/BaseMenuObject.hpp>
 
+#include "SDL_events.h"
+
 namespace zerokernel
 {
+class BaseMenuObject;
 
 class ModalBehavior
 {

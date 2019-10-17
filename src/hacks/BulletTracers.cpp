@@ -1,7 +1,39 @@
 /*
  * Credits  To Unknown For most of this
  */
-#include "common.hpp"
+
+#include <bspflags.h>
+#include <client_class.h>
+#include <engine/ICollideable.h>
+#include <engine/IEngineTrace.h>
+#include <icliententity.h>
+#include <icliententitylist.h>
+#include <mathlib/vector.h>
+#include <stdint.h>
+#include <string.h>
+#include <core/sdk.hpp>
+#include <string>
+
+#include "Bool.hpp"
+#include "CSignature.h"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "bytepatch.hpp"
+#include "classinfo.hpp"
+#include "e8call.hpp"
+#include "entitycache.hpp"
+#include "entityhitboxcache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "trace.hpp"
+#include "usercmd.hpp"
+#include "vfunc.hpp"
 
 namespace hacks::tf2::bullettracers
 {

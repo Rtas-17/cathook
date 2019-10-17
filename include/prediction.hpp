@@ -8,6 +8,9 @@
 #pragma once
 
 #include <enums.hpp>
+#include <utility>
+#include <vector>
+
 #include "config.h"
 #include "vector"
 

@@ -1,7 +1,12 @@
 
 
+#include <cdll_int.h>
+#include <client_class.h>
+#include <string>
+#include <unordered_map>
+
 #include "classinfo/dynamic.gen.hpp"
-#include "common.hpp"
+#include "interfaces.hpp"
 
 namespace client_classes
 {

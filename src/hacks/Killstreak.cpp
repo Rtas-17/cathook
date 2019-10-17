@@ -5,9 +5,27 @@
  *      Author: nullifiedcat
  */
 
-#include <settings/Bool.hpp>
-#include "common.hpp"
+#include <cdll_int.h>
+#include <client_class.h>
+#include <icliententity.h>
+#include <icliententitylist.h>
+#include <igameevents.h>
+#include <string.h>
+#include <string>
+#include <unordered_map>
+
 #include "hooks.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "classinfo.hpp"
+#include "entitycache.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+#include "offsets.hpp"
+#include "playerresource.h"
 
 namespace hacks::tf2::killstreak
 {

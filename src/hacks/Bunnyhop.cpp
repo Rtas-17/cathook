@@ -5,8 +5,17 @@
  *      Author: nullifiedcat
  */
 
-#include <settings/Bool.hpp>
-#include "common.hpp"
+#include <string>
+
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "entitycache.hpp"
+#include "globals.h"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "usercmd.hpp"
 
 namespace hacks::shared::bunnyhop
 {

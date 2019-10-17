@@ -4,6 +4,17 @@
 
 #include <menu/object/input/StringInput.hpp>
 #include <menu/menu/special/SettingsManagerList.hpp>
+#include <vector>
+
+#include "BaseMenuObject.hpp"
+#include "BoundingBox.hpp"
+#include "Manager.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "Text.hpp"
+#include "TextInput.hpp"
+#include "Utility.hpp"
+#include "tinyxml2.hpp"
 
 namespace zerokernel_stringinput
 {

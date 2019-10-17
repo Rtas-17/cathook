@@ -5,16 +5,57 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
-#include "core/sharedobj.hpp"
-#include <thread>
-
-#include <unistd.h>
-
+#include <steam/isteamclient.h>
+#include <cdll_int.h>
+#include <dlfcn.h>
+#include <stdint.h>
+#include <stdlib.h>
 #include <string>
 #include <sstream>
 
-#include <steam/isteamclient.h>
+#include "core/sharedobj.hpp"
+#include "CSignature.h"
+#include "ScreenSpaceEffects.h"
+#include "config.h"
+#include "gameinfo.hpp"
+#include "interfaces.hpp"
+#include "logging.hpp"
+
+class CBaseClientState;
+class CGameRules;
+class CGlobalVarsBase;
+class CHud;
+class IAchievementMgr;
+class IClientEntityList;
+class ICvar;
+class IEngineSound;
+class IEngineTrace;
+class IEngineVGui;
+class IFileSystem;
+class IGameEventManager2;
+class IGameEventManager;
+class IGameMovement;
+class IInput;
+class IInputSystem;
+class IMDLCache;
+class IMaterialSystem;
+class IMaterialSystemFixed;
+class IMoveHelperServer;
+class IPrediction;
+class ISteamFriends;
+class ISteamUser;
+class ISteamUserStats;
+class IStudioRender;
+class IUniformRandomStream;
+class IVDebugOverlay;
+class IVModelInfoClient;
+class IVModelRender;
+class IVRenderView;
+class TFGCClientSystem;
+namespace vgui {
+class IPanel;
+class ISurface;
+}  // namespace vgui
 
 // class ISteamFriends002;
 

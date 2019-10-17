@@ -3,10 +3,16 @@
 */
 
 #include <hacks/Thirdperson.hpp>
-#include <settings/Bool.hpp>
 #include <localplayer.hpp>
 #include <entitycache.hpp>
-#include <core/sdk.hpp>
+#include <mathlib/vector.h>
+#include <string>
+
+#include "Registered.hpp"
+#include "globals.h"
+#include "iinput.h"
+#include "interfaces.hpp"
+#include "netvars.hpp"
 
 namespace hacks::tf::thirdperson
 {

@@ -5,11 +5,36 @@
 
 #include <ucccccp.hpp>
 #include <MiscTemporary.hpp>
-#include <settings/Int.hpp>
+#include <bitbuf.h>
+#include <cdll_int.h>
+#include <igameevents.h>
+#include <inetmessage.h>
+#include <string.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <chrono>
+#include <string>
+#include <vector>
+
 #include "HookedMethods.hpp"
-#include <MiscTemporary.hpp>
 #include "irc.hpp"
-#include "e8call.hpp"
+#include "Bool.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "playerlist.hpp"
+#include "timer.hpp"
+
+class ConVar;
 
 static settings::Int newlines_msg{ "chat.prefix-newlines", "0" };
 static settings::Boolean log_sent{ "debug.log-sent-chat", "false" };

@@ -5,10 +5,30 @@
  *      Author: nullifiedcat
  */
 
-#include <settings/Float.hpp>
-#include "common.hpp"
+#include <cdll_int.h>
+#include <igameevents.h>
+#include <mathlib/vector.h>
+#include <vstdlib/random.h>
+#include <optional>
+#include <string>
+
 #include "hack.hpp"
 #include "PlayerTools.hpp"
+#include "C_BaseCombatWeapon.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "classinfo.hpp"
+#include "conditions.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "timer.hpp"
+
+class IClientEntity;
 
 namespace hacks::tf::autotaunt
 {

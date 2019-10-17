@@ -6,8 +6,19 @@
  */
 
 #include <hacks/AntiCheat.hpp>
-#include <settings/Int.hpp>
-#include "common.hpp"
+#include <const.h>
+#include <string.h>
+#include <string>
+
+#include "Registered.hpp"
+#include "ac/bhop.hpp"
+#include "entitycache.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+
+class KeyValues;
 
 namespace ac::bhop
 {

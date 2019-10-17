@@ -5,10 +5,17 @@
 
 #pragma once
 
-#include <iostream>
 #include <settings/Bool.hpp>
 #include <menu/BaseMenuObject.hpp>
 #include <menu/Menu.hpp>
+#include <iostream>
+
+namespace settings {
+template <typename T> class Variable;
+}  // namespace settings
+namespace tinyxml2 {
+class XMLElement;
+}  // namespace tinyxml2
 
 namespace zerokernel
 {

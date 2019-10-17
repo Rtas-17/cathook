@@ -7,10 +7,14 @@
 #include <menu/object/Option.hpp>
 #include <menu/ModalBehavior.hpp>
 #include <menu/object/container/List.hpp>
+#include <optional>
+#include <string>
+
 #include "ModalContainer.hpp"
 
 namespace zerokernel
 {
+class Message;
 
 class ModalSelect : public ModalContainer
 {

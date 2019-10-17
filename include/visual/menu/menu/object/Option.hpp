@@ -5,6 +5,10 @@
 #pragma once
 
 #include <menu/Menu.hpp>
+#include <string>
+
+#include "BaseMenuObject.hpp"
+#include "Text.hpp"
 
 namespace zerokernel
 {

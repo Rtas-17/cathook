@@ -1,10 +1,18 @@
-#include "common.hpp"
 
 /**
  * netvar_tree - Constructor
  *
  * Call populate_nodes on every RecvTable under client->GetAllClasses()
  */
+#include <cdll_int.h>
+#include <client_class.h>
+#include <dt_common.h>
+#include <dt_recv.h>
+#include <memory>
+
+#include "Netvar.h"
+#include "interfaces.hpp"
+
 void netvar_tree::init()
 {
     const auto *client_class = g_IBaseClient->GetAllClasses();

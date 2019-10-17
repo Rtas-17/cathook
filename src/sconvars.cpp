@@ -5,7 +5,17 @@
  *      Author: nullifiedcat
  */
 
+#include <convar.h>
+#include <core/sdk.hpp>
+#include <memory>
+#include <string>
+#include <vector>
+
 #include "sconvars.hpp"
+#include "cvwrapper.hpp"
+#include "helpers.hpp"
+#include "interfaces.hpp"
+#include "logging.hpp"
 
 namespace sconvar
 {

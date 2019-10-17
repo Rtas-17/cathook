@@ -8,8 +8,10 @@
 #pragma once
 
 #include <core/sharedobj.hpp>
-#include <string>
 #include <engine/IEngineSound.h>
+#include <string>
+
+class IEngineSound;
 
 namespace vgui
 {

@@ -2,6 +2,16 @@
 #include <menu/object/Text.hpp>
 #include <menu/Menu.hpp>
 #include <drawing.hpp>
+#include <string>
+#include <utility>
+
+#include "BoundingBox.hpp"
+#include "Rgba.hpp"
+#include "SDL_events.h"
+#include "SDL_mouse.h"
+#include "colors.hpp"
+#include "config.h"
+#include "tinyxml2.hpp"
 
 /*
   Created on 08.07.18.

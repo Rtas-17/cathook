@@ -6,6 +6,13 @@
 
 #include <menu/object/container/Container.hpp>
 #include <menu/wm/WMWindow.hpp>
+#include <stddef.h>
+#include <functional>
+#include <memory>
+#include <vector>
+
+#include "BaseMenuObject.hpp"
+#include "SDL_events.h"
 
 namespace zerokernel
 {

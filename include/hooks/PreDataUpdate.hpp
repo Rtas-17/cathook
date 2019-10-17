@@ -4,6 +4,7 @@
 
 #pragma once
 #include "HookedMethods.hpp"
+
 namespace hooked_methods
 {
 void CreateMove();

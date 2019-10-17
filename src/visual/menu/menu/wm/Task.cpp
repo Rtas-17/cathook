@@ -1,6 +1,14 @@
 #include <menu/BaseMenuObject.hpp>
 #include <menu/wm/Task.hpp>
-#include <menu/Menu.hpp>
+#include <string>
+
+#include "BoundingBox.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "Text.hpp"
+#include "WMWindow.hpp"
+#include "WindowContainer.hpp"
+#include "colors.hpp"
 
 /*
   Created on 06.07.18.

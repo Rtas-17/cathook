@@ -10,7 +10,6 @@
  *  Created on: Oct 5, 2016
  *      Author: nullifiedcat
  */
-#include "common.hpp"
 #if ENABLE_IMGUI_DRAWING
 #include "imgui/imrenderer.hpp"
 #elif ENABLE_GLEZ_DRAWING
@@ -19,15 +18,32 @@
 #elif ENABLE_ENGINE_DRAWING
 #include "picopng.hpp"
 #endif
-#include "menu/GuiInterface.hpp"
 #include <GL/glew.h>
-#include <SDL2/SDL_video.h>
-#include <SDLHooks.hpp>
-#include "soundcache.hpp"
+#include <cdll_int.h>
+#include <icliententity.h>
+#include <mathlib/vector.h>
+#include <mathlib/vmatrix.h>
+#include <stddef.h>
+#include <view_shared.h>
+#include <core/sdk.hpp>
+#include <array>
+#include <memory>
+#include <optional>
+#include <string>
 
-// String -> Wstring
-#include <codecvt>
-#include <locale>
+#include "menu/GuiInterface.hpp"
+#include "Registered.hpp"
+#include "colors.hpp"
+#include "config.h"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "logging.hpp"
+
+namespace settings {
+template <typename T> class VariableBase;
+}  // namespace settings
 
 #if EXTERNAL_DRAWING
 #include "xoverlay.h"

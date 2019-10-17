@@ -8,10 +8,15 @@
 #include <menu/wm/WindowCloseButton.hpp>
 #include <menu/object/container/Container.hpp>
 
+#include "SDL_events.h"
+
 namespace zerokernel
 {
 
 class WMWindow;
+class Message;
+class Text;
+class WindowCloseButton;
 
 /*
  *  Shows window name

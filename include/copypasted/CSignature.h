@@ -4,8 +4,14 @@
 
 //#include "SDK.h"
 #include <stdint.h>
-#include "sharedobj.hpp"
 #include <elf.h>
+
+#include "sharedobj.hpp"
+
+namespace sharedobj {
+class SharedObject;
+}  // namespace sharedobj
+struct link_map;
 
 namespace CSignature_space
 {

@@ -48,12 +48,16 @@ Index of this file:
 #define _CRT_SECURE_NO_WARNINGS
 #endif
 
-#include "visual/imgui/imgui.h"
 #include <ctype.h>                        // toupper, isprint
 #include <limits.h>                       // INT_MIN, INT_MAX
 #include <math.h>                         // sqrtf, powf, cosf, sinf, floorf, ceilf
 #include <stdio.h>                        // vsnprintf, sscanf, printf
 #include <stdlib.h>                       // NULL, malloc, free, atoi
+#include <float.h>
+#include <stdarg.h>
+#include <string.h>
+
+#include "visual/imgui/imgui.h"
 #if defined(_MSC_VER) && _MSC_VER <= 1500 // MSVC 2008 or earlier
 #include <stddef.h>                       // intptr_t
 #else

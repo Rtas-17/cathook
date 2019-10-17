@@ -5,6 +5,8 @@
 
 #include "HookedMethods.hpp"
 
+class IStudioRender;
+
 namespace hooked_methods
 {
 

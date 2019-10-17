@@ -6,6 +6,7 @@
  */
 #pragma once
 #include "reclasses.hpp"
+
 class C_TEFireBullets
 {
 public:

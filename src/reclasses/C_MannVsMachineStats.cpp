@@ -4,7 +4,12 @@
  *  Created on: Apr 10, 2018
  *      Author: bencat07
  */
-#include "common.hpp"
+#include <stdint.h>
+
+#include "CSignature.h"
+#include "C_BaseEntity.hpp"
+#include "C_MannVsMachineStats.hpp"
+
 using namespace re;
 
 // Unsued right now because of unclear values in AddLocalPlayerUpgrade

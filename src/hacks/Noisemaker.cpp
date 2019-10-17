@@ -5,8 +5,18 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
-#include <settings/Bool.hpp>
+#include <cdll_int.h>
+#include <convar.h>
+#include <dbg.h>
+#include <core/sdk.hpp>
+#include <string>
+
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "entitycache.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
 
 namespace hacks::tf2::noisemaker
 {

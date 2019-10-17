@@ -5,6 +5,12 @@
 #pragma once
 
 #include <menu/object/container/Container.hpp>
+#include <stddef.h>
+#include <vector>
+
+namespace tinyxml2 {
+class XMLElement;
+}  // namespace tinyxml2
 
 namespace zerokernel
 {

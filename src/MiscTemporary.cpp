@@ -3,7 +3,15 @@
   Copyright (c) 2018 nullworks. All rights reserved.
 */
 
+#include <cstdint>
+#include <string>
+
 #include "MiscTemporary.hpp"
+#include "CSignature.h"
+#include "Settings.hpp"
+#include "bytepatch.hpp"
+#include "init.hpp"
+
 std::array<Timer, 32> timers{};
 std::array<int, 32> bruteint{};
 

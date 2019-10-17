@@ -2,8 +2,26 @@
  * Created on 29.07.18.
  */
 
-#include <common.hpp>
 #include <hacks/AntiAntiAim.hpp>
+#include <cdll_int.h>
+#include <icliententity.h>
+#include <icliententitylist.h>
+#include <igameevents.h>
+#include <math.h>
+#include <mathlib/vector.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <deque>
+#include <string>
+
+#include "Registered.hpp"
+#include "entitycache.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
 
 namespace hacks::shared::anti_anti_aim
 {

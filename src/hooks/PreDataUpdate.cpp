@@ -4,9 +4,16 @@
  *  Created on: Jul 27, 2018
  *      Author: bencat07
  */
-#include "HookedMethods.hpp"
+#include <stdint.h>
+#include <sys/mman.h>
+
 #include "SeedPrediction.hpp"
 #include "PreDataUpdate.hpp"
+#include "C_TEFireBullets.hpp"
+#include "entitycache.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "offsets.hpp"
 
 namespace hooked_methods
 {

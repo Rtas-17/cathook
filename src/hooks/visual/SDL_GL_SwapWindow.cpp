@@ -5,11 +5,21 @@
 
 #include <MiscTemporary.hpp>
 #include <visual/SDLHooks.hpp>
-#include "HookedMethods.hpp"
-#include "timer.hpp"
 #include <SDL2/SDL_syswm.h>
 #include <menu/menu/Menu.hpp>
+
+#include "HookedMethods.hpp"
+#include "timer.hpp"
 #include "clip.h"
+#include "Registered.hpp"
+#include "SDL_stdinc.h"
+#include "SDL_version.h"
+#include "SDL_video.h"
+#include "config.h"
+#include "drawing.hpp"
+#include "globals.h"
+#include "profiler.hpp"
+#include "sharedobj.hpp"
 
 static bool swapwindow_init{ false };
 static bool init_wminfo{ false };

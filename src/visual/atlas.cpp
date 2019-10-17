@@ -5,7 +5,12 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <string>
+
+#include "atlas.hpp"
+#include "colors.hpp"
+#include "config.h"
+#include "drawing.hpp"
 
 namespace textures
 {

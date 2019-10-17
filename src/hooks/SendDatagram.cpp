@@ -4,8 +4,19 @@
  *  Created on: May 21, 2018
  *      Author: bencat07
  */
+#include <math.h>
+#include <core/sdk.hpp>
+
 #include "HookedMethods.hpp"
 #include "hacks/Backtrack.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "entitycache.hpp"
+#include "globals.h"
+#include "localplayer.hpp"
+
+class bf_write;
+
 namespace hooked_methods
 {
 DEFINE_HOOKED_METHOD(SendDatagram, int, INetChannel *ch, bf_write *buf)

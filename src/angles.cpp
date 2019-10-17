@@ -4,7 +4,18 @@
  *  Created on: Jun 5, 2017
  *      Author: nullifiedcat
  */
-#include "angles.hpp"
+
+#include <cdll_int.h>
+#include <math.h>
+#include <mathlib/vector.h>
+#include <string.h>
+#include <stdexcept>
+
+#include "entitycache.hpp"
+#include "globals.h"
+#include "interfaces.hpp"
+#include "netvars.hpp"
+#include "usercmd.hpp"
 
 namespace angles
 {

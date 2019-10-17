@@ -3,6 +3,18 @@
 */
 
 #include <menu/object/input/TextInput.hpp>
+#include <utility>
+
+#include "BaseMenuObject.hpp"
+#include "BoundingBox.hpp"
+#include "Message.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "SDL_keyboard.h"
+#include "SDL_keycode.h"
+#include "SDL_mouse.h"
+#include "colors.hpp"
+#include "drawing.hpp"
 
 namespace zerokernel_textinput
 {

@@ -7,6 +7,13 @@
 
 #pragma once
 
+#include <stdint.h>
+#include <utlmemory.h>
+#include <utlvector.h>
+#include <string>
+#include <unordered_map>
+#include <vector>
+
 #include "common.hpp"
 
 namespace hacks::tf2::skinchanger

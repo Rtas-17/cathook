@@ -12,8 +12,45 @@
 #include <hacks/Backtrack.hpp>
 #include <PlayerTools.hpp>
 #include <settings/Bool.hpp>
-#include "common.hpp"
+#include <bspflags.h>
+#include <cdll_int.h>
+#include <engine/ICollideable.h>
+#include <engine/IEngineTrace.h>
+#include <icliententitylist.h>
+#include <math.h>
+#include <mathlib/mathlib.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <array>
+#include <string>
+#include <utility>
+
 #include "MiscTemporary.hpp"
+#include "C_TFWeaponBaseMelee.hpp"
+#include "HookTools.hpp"
+#include "Settings.hpp"
+#include "classinfo.hpp"
+#include "colors.hpp"
+#include "conditions.hpp"
+#include "config.h"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "entityhitboxcache.hpp"
+#include "enums.hpp"
+#include "gameinfo.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "playerlist.hpp"
+#include "prediction.hpp"
+#include "profiler.hpp"
+#include "timer.hpp"
+#include "trace.hpp"
+#include "usercmd.hpp"
 
 namespace hacks::shared::aimbot
 {

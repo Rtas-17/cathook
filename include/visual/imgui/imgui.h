@@ -61,6 +61,7 @@ Index of this file:
 // Helper Macros
 #ifndef IM_ASSERT
 #include <assert.h>
+
 #define IM_ASSERT(_EXPR) assert(_EXPR) // You can override the default assert handler by editing imconfig.h
 #endif
 #if defined(__clang__) || defined(__GNUC__)
@@ -161,6 +162,7 @@ typedef signed __int64 ImS64;   // 64-bit signed integer (pre and post C++11 wit
 typedef unsigned __int64 ImU64; // 64-bit unsigned integer (pre and post C++11 with Visual Studio)
 #elif (defined(__clang__) || defined(__GNUC__)) && (__cplusplus < 201100)
 #include <stdint.h>
+
 typedef int64_t ImS64;  // 64-bit signed integer (pre C++11)
 typedef uint64_t ImU64; // 64-bit unsigned integer (pre C++11)
 #else

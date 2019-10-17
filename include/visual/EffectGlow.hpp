@@ -7,8 +7,15 @@
 
 #pragma once
 
+#include <materialsystem/MaterialSystemUtil.h>
+
 #include "common.hpp"
 #include "core/sdk.hpp"
+#include "ScreenSpaceEffects.h"
+#include "colors.hpp"
+
+class IClientEntity;
+class KeyValues;
 
 namespace effect_glow
 {

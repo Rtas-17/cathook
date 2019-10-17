@@ -5,9 +5,37 @@
  *      Author: nullifiedcat
  */
 
-#include <settings/Bool.hpp>
+#include <cdll_int.h>
+#include <convar.h>
+#include <dbg.h>
+#include <iachievementmgr.h>
+#include <stdlib.h>
+#include <steam/isteamuserstats.h>
+#include <algorithm>
+#include <deque>
+#include <memory>
+#include <ostream>
+#include <stdexcept>
+#include <string>
+#include <utility>
+#include <vector>
+
 #include "Misc.hpp"
-#include "common.hpp"
+#include "CTFInventoryManager.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "timer.hpp"
+
+namespace settings {
+template <typename T> class VariableBase;
+}  // namespace settings
 
 namespace hacks::tf2::achievement
 {

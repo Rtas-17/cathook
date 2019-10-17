@@ -1,8 +1,29 @@
 /*
  *  Credits to UNKN0WN
  */
-#include "common.hpp"
 
+#include <cdll_int.h>
+#include <core/sdk.hpp>
+#include <array>
+#include <cstdint>
+#include <string>
+#include <vector>
+
+#include "CSignature.h"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "bytepatch.hpp"
+#include "colors.hpp"
+#include "config.h"
+#include "enums.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "playerlist.hpp"
+#include "playerresource.h"
+
+namespace settings {
+template <typename T> class VariableBase;
+}  // namespace settings
 #if !ENFORCE_STREAM_SAFETY
 namespace hacks::tf2::killfeed
 {

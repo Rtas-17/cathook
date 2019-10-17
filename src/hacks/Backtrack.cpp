@@ -5,13 +5,53 @@
  *      Author: bencat07
  */
 
-#include "common.hpp"
-#include "hacks/Aimbot.hpp"
-#include "hacks/Backtrack.hpp"
 #include <boost/circular_buffer.hpp>
 #include <settings/Bool.hpp>
-#include "PlayerTools.hpp"
 #include <hacks/Backtrack.hpp>
+#include <basetypes.h>
+#include <cdll_int.h>
+#include <convar.h>
+#include <engine/ICollideable.h>
+#include <float.h>
+#include <icliententity.h>
+#include <inetchannelinfo.h>
+#include <math.h>
+#include <minmax.h>
+#include <stdlib.h>
+#include <steam/isteamfriends.h>
+#include <string.h>
+#include <studio.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <memory>
+#include <string>
+#include <utility>
+#include <vector>
+
+#include "hacks/Backtrack.hpp"
+#include "C_BaseCombatWeapon.hpp"
+#include "HookTools.hpp"
+#include "Settings.hpp"
+#include "colors.hpp"
+#include "conditions.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "entityhitboxcache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+#include "profiler.hpp"
+#include "usercmd.hpp"
+
+struct model_t;
 
 namespace hacks::shared::backtrack
 {

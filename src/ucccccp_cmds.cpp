@@ -5,8 +5,12 @@
  *      Author: nullifiedcat
  */
 
+#include <convar.h>
+#include <string>
+
 #include "ucccccp.hpp"
-#include "common.hpp"
+#include "cvwrapper.hpp"
+#include "logging.hpp"
 
 CatCommand utfccp_encrypt("ucccccp_encrypt", "Encrypt a message", [](const CCommand &args) { logging::Info("%s", ucccccp::encrypt(std::string(args.ArgS())).c_str()); });
 

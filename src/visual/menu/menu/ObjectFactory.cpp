@@ -2,7 +2,6 @@
   Copyright (c) 2018 nullworks. All rights reserved.
 */
 
-#include <iostream>
 #include <menu/ObjectFactory.hpp>
 #include <menu/object/input/Checkbox.hpp>
 #include <menu/object/input/ColorSelector.hpp>
@@ -13,11 +12,35 @@
 #include <menu/object/container/Box.hpp>
 #include <menu/object/container/TabContainer.hpp>
 #include <menu/object/container/LabeledObject.hpp>
-#include <menu/object/container/Box.hpp>
 #include <menu/object/container/Table.hpp>
 #include <menu/object/container/TData.hpp>
 #include <menu/object/container/ScrollableList.hpp>
 #include <menu/object/container/ModalContainer.hpp>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <iostream>
+#include <utility>
+#include <vector>
+
+#include "BaseMenuObject.hpp"
+#include "Bool.hpp"
+#include "Container.hpp"
+#include "Float.hpp"
+#include "Int.hpp"
+#include "Key.hpp"
+#include "List.hpp"
+#include "Manager.hpp"
+#include "Menu.hpp"
+#include "Rgba.hpp"
+#include "Settings.hpp"
+#include "SettingsManagerList.hpp"
+#include "Spinner.hpp"
+#include "String.hpp"
+#include "TRow.hpp"
+#include "Text.hpp"
+#include "colors.hpp"
+#include "tinyxml2.hpp"
 
 namespace zerokernel
 {

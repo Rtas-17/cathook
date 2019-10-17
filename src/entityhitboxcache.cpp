@@ -5,8 +5,28 @@
  *      Author: nullifiedcat
  */
 
-#include <settings/Int.hpp>
-#include "common.hpp"
+#include <icliententity.h>
+#include <mathlib/mathlib.h>
+#include <mathlib/vector.h>
+#include <string.h>
+#include <studio.h>
+#include <core/sdk.hpp>
+#include <mutex>
+#include <string>
+
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "config.h"
+#include "entitycache.hpp"
+#include "entityhitboxcache.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "profiler.hpp"
+
+struct model_t;
 
 namespace hitbox_cache
 {

@@ -10,9 +10,28 @@
 #include <menu/Message.hpp>
 #include <menu/BaseMenuObject.hpp>
 #include <menu/object/ModalSpinner.hpp>
+#include <algorithm>
+#include <memory>
+#include <string>
+#include <type_traits>
+
+#include "BoundingBox.hpp"
+#include "Float.hpp"
+#include "Int.hpp"
+#include "Manager.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "SDL_events.h"
+#include "SDL_mouse.h"
+#include "SettingsManagerList.hpp"
+#include "Utility.hpp"
+#include "colors.hpp"
+#include "drawing.hpp"
+#include "tinyxml2.hpp"
 
 namespace zerokernel
 {
+template <typename T> class ModalSpinner;
 
 // FIXME .cpp
 class SliderStyle

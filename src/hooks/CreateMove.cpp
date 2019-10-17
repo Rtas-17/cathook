@@ -5,20 +5,58 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
-#include "hack.hpp"
-#include "MiscTemporary.hpp"
-#include "SeedPrediction.hpp"
-#include <link.h>
-#include <hacks/hacklist.hpp>
 #include <settings/Bool.hpp>
 #include <hacks/AntiAntiAim.hpp>
+#include <cdll_int.h>
+#include <checksum_md5.h>
+#include <math.h>
+#include <mathlib/mathlib.h>
+#include <mathlib/vector.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <atomic>
+#include <deque>
+#include <memory>
+#include <string>
+
+#include "MiscTemporary.hpp"
 #include "NavBot.hpp"
 #include "HookTools.hpp"
 #include "irc.hpp"
-
 #include "HookedMethods.hpp"
 #include "PreDataUpdate.hpp"
+#include "AntiAim.hpp"
+#include "Backtrack.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "chatstack.hpp"
+#include "classinfo.hpp"
+#include "conditions.hpp"
+#include "config.h"
+#include "crits.hpp"
+#include "entitycache.hpp"
+#include "gameinfo.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "hooks.hpp"
+#include "in_buttons.h"
+#include "interfaces.hpp"
+#include "ipc.hpp"
+#include "localplayer.hpp"
+#include "navparser.hpp"
+#include "netvars.hpp"
+#include "playerresource.h"
+#include "prediction.hpp"
+#include "profiler.hpp"
+#include "projlogging.hpp"
+#include "timer.hpp"
+#include "usercmd.hpp"
+
+class CBasePlayer;
+class IClientEntity;
+class IPrediction;
 
 static settings::Boolean minigun_jump{ "misc.minigun-jump-tf2c", "false" };
 static settings::Boolean roll_speedhack{ "misc.roll-speedhack", "false" };
@@ -33,7 +71,6 @@ static settings::Boolean fuckmode{ "misc.fuckmode", "false" };
 static settings::Boolean no_shake{ "visual.no-shake", "true" };
 #endif
 
-class CMoveData;
 namespace engine_prediction
 {
 

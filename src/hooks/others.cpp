@@ -6,15 +6,16 @@
  *
  */
 
-#include "common.hpp"
-#include "ucccccp.hpp"
-#include "hack.hpp"
-#include "hitrate.hpp"
-#include "chatlog.hpp"
-#include "sdk/netmessage.hpp"
-#include <boost/algorithm/string.hpp>
 #include <MiscTemporary.hpp>
-#include "HookedMethods.hpp"
+#include <bits/exception.h>
+#include <cdll_int.h>
+#include <convar.h>
+#include <string>
+
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "interfaces.hpp"
+#include "logging.hpp"
 #if ENABLE_VISUALS
 
 // This hook isn't used yet!

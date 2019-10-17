@@ -5,6 +5,9 @@
 #pragma once
 
 #include <menu/BaseMenuObject.hpp>
+#include <stddef.h>
+
+#include "SDL_events.h"
 
 namespace zerokernel
 {

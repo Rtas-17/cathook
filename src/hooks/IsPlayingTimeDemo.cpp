@@ -4,8 +4,15 @@
  *  Created on: May 13, 2018
  *      Author: bencat07
  */
+#include <core/sdk.hpp>
+#include <string>
+#include <vector>
+
 #include "HookedMethods.hpp"
-#include "MiscTemporary.hpp"
+#include "Registered.hpp"
+#include "logging.hpp"
+
+class IVEngineClient013;
 
 static settings::Boolean enable_debug_servercmd{ "debug.servercmdkeyvalues", "false" };
 namespace hooked_methods

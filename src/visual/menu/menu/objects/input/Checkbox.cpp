@@ -4,6 +4,20 @@
 
 #include <menu/object/input/Checkbox.hpp>
 #include <menu/menu/special/SettingsManagerList.hpp>
+#include <string>
+#include <vector>
+
+#include "BaseMenuObject.hpp"
+#include "Bool.hpp"
+#include "BoundingBox.hpp"
+#include "Manager.hpp"
+#include "Menu.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "Settings.hpp"
+#include "colors.hpp"
+#include "drawing.hpp"
+#include "tinyxml2.hpp"
 
 namespace zerokernel_checkbox
 {

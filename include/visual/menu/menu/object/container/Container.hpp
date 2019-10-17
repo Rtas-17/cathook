@@ -5,11 +5,17 @@
 
 #pragma once
 
+#include <menu/BaseMenuObject.hpp>
 #include <memory>
 #include <vector>
-#include <menu/BaseMenuObject.hpp>
 #include <algorithm>
 #include <functional>
+
+#include "SDL_events.h"
+
+namespace tinyxml2 {
+class XMLElement;
+}  // namespace tinyxml2
 
 namespace zerokernel
 {

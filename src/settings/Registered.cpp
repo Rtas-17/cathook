@@ -2,7 +2,14 @@
   Created on 02.07.18.
 */
 
-#include <settings/Settings.hpp>
+#include <string>
+
+#include "Manager.hpp"
+#include "Registered.hpp"
+
+namespace settings {
+class IVariable;
+}  // namespace settings
 
 void settings::registerVariable(IVariable &variable, std::string name)
 {

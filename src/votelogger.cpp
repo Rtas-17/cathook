@@ -5,10 +5,34 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
-#include <boost/algorithm/string.hpp>
 #include <settings/Bool.hpp>
+#include <bitbuf.h>
+#include <cdll_int.h>
+#include <igameevents.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <core/sdk.hpp>
+#include <chrono>
+#include <vector>
+
 #include "CatBot.hpp"
+#include "CTFPartyClient.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "playerlist.hpp"
+#include "timer.hpp"
+
+namespace settings {
+template <typename T> class VariableBase;
+}  // namespace settings
 
 static settings::Boolean vote_kicky{ "votelogger.autovote.yes", "false" };
 static settings::Boolean vote_kickn{ "votelogger.autovote.no", "false" };

@@ -3,13 +3,36 @@
 */
 
 #include <menu/BaseMenuObject.hpp>
-#include <menu/Message.hpp>
 #include <menu/wm/WMWindow.hpp>
 #include <menu/wm/WindowContainer.hpp>
 #include <menu/ObjectFactory.hpp>
 #include <menu/Menu.hpp>
 #include <menu/object/input/Select.hpp>
 #include <menu/object/input/Checkbox.hpp>
+#include <stdio.h>
+#include <memory>
+#include <utility>
+
+#include "Bool.hpp"
+#include "BoundingBox.hpp"
+#include "Container.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "SDL_keyboard.h"
+#include "SDL_keycode.h"
+#include "SDL_mouse.h"
+#include "WindowHeader.hpp"
+#include "colors.hpp"
+
+namespace settings {
+template <typename T> class VariableBase;
+}  // namespace settings
+namespace tinyxml2 {
+class XMLElement;
+}  // namespace tinyxml2
+namespace zerokernel {
+class Message;
+}  // namespace zerokernel
 
 namespace zerokernel_wmwindow
 {

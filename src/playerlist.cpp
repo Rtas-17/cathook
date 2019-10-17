@@ -5,13 +5,28 @@
  *      Author: nullifiedcat
  */
 
-#include "playerlist.hpp"
-#include "common.hpp"
-
 #include <stdint.h>
 #include <dirent.h>
-#include <sys/stat.h>
-#include <boost/algorithm/string.hpp>
+#include <bits/exception.h>
+#include <cdll_int.h>
+#include <convar.h>
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <boost/algorithm/string/case_conv.hpp>
+#include <boost/iterator/iterator_facade.hpp>
+#include <algorithm>
+#include <istream>
+#include <stdexcept>
+#include <vector>
+
+#include "playerlist.hpp"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "logging.hpp"
 
 namespace playerlist
 {

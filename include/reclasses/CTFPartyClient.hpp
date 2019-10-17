@@ -6,9 +6,14 @@
  */
 
 #pragma once
+#include <steam/steamclientpublic.h>
+#include <vector>
+
 #include "reclasses.hpp"
+
 namespace re
 {
+class ITFGroupMatchCriteria;
 
 class CTFPartyClient
 {

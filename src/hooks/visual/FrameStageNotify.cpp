@@ -3,12 +3,27 @@
   Copyright (c) 2018 nullworks. All rights reserved.
 */
 
-#include <MiscTemporary.hpp>
-#include <hacks/hacklist.hpp>
-#include <settings/Bool.hpp>
 #include <hacks/Thirdperson.hpp>
+#include <cdll_int.h>
+#include <convar.h>
+#include <materialsystem/imaterial.h>
+#include <materialsystem/imaterialsystem.h>
+#include <string.h>
+#include <core/sdk.hpp>
+#include <string>
+
 #include "HookedMethods.hpp"
-#include "hacks/Backtrack.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "SkinChanger.hpp"
+#include "entitycache.hpp"
+#include "gameinfo.hpp"
+#include "globals.h"
+#include "imaterialsystemfixed.h"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "profiler.hpp"
 
 static settings::Float nightmode{ "visual.night-mode", "0" };
 static settings::Boolean no_shake{ "visual.no-shake", "true" };
@@ -17,7 +32,6 @@ static float old_nightmode{ 0.0f };
 
 namespace hooked_methods
 {
-#include "reclasses.hpp"
 DEFINE_HOOKED_METHOD(FrameStageNotify, void, void *this_, ClientFrameStage_t stage)
 {
     if (!isHackActive())

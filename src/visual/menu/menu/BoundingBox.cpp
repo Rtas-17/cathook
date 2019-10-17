@@ -5,6 +5,8 @@
 #include <menu/BoundingBox.hpp>
 #include <menu/Menu.hpp>
 
+#include "BoundingBox.hpp"
+
 /*
  * When object changes size:
  *

@@ -4,9 +4,36 @@
  *  Created on: Mar 28, 2017
  *      Author: nullifiedcat
  */
-#include "common.hpp"
-#include <settings/Int.hpp>
 
+#include <cdll_int.h>
+#include <ext/alloc_traits.h>
+#include <math.h>
+#include <mathlib/mathlib.h>
+#include <mathlib/vector.h>
+#include <memory>
+#include <optional>
+#include <string>
+#include <utility>
+#include <vector>
+
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "atlas.hpp"
+#include "classinfo.hpp"
+#include "colors.hpp"
+#include "config.h"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "itemtypes.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+#include "timer.hpp"
 #ifndef FEATURE_RADAR_DISABLED
 #if ENABLE_VISUALS
 

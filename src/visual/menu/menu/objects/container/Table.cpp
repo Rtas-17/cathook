@@ -3,7 +3,17 @@
 */
 
 #include <menu/object/container/Table.hpp>
-#include <menu/Menu.hpp>
+#include <memory>
+#include <string>
+
+#include "BaseMenuObject.hpp"
+#include "BoundingBox.hpp"
+#include "Container.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "colors.hpp"
+#include "drawing.hpp"
+#include "tinyxml2.hpp"
 
 namespace zerokernel_table
 {

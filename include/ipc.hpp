@@ -12,8 +12,9 @@
 #if ENABLE_IPC
 
 #include <SimpleIPC/ipcb.hpp>
-#include "pthread.h"
 #include <time.h>
+
+#include "pthread.h"
 
 class CatCommand;
 

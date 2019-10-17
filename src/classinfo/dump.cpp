@@ -5,7 +5,14 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <cdll_int.h>
+#include <client_class.h>
+#include <stdio.h>
+#include <string>
+
+#include "cvwrapper.hpp"
+#include "dynamic.gen.hpp"
+#include "interfaces.hpp"
 
 void PerformClassDump()
 {

@@ -6,15 +6,63 @@
  */
 
 #include <settings/Bool.hpp>
+#include <cdll_int.h>
+#include <convar.h>
+#include <float.h>
+#include <icliententitylist.h>
+#include <igameevents.h>
+#include <inetmessage.h>
+#include <limits.h>
+#include <mathlib/vector.h>
+#include <stdlib.h>
+#include <steam/steamclientpublic.h>
+#include <steam/steamuniverse.h>
+#include <string.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <atomic>
+#include <cstdint>
+#include <functional>
+#include <stack>
+#include <stdexcept>
+#include <string>
+#include <unordered_map>
+#include <utility>
+#include <vector>
+
 #include "CatBot.hpp"
-#include "common.hpp"
 #include "hack.hpp"
 #include "PlayerTools.hpp"
 #include "e8call.hpp"
 #include "NavBot.hpp"
 #include "navparser.hpp"
-#include "SettingCommands.hpp"
 #include "glob.h"
+#include "CSignature.h"
+#include "C_BaseCombatWeapon.hpp"
+#include "HUD.h"
+#include "HookTools.hpp"
+#include "Settings.hpp"
+#include "String.hpp"
+#include "bytepatch.hpp"
+#include "colors.hpp"
+#include "cvwrapper.hpp"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "entityhitboxcache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "ipc.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+#include "playerlist.hpp"
+#include "playerresource.h"
+#include "tfmm.hpp"
+#include "usercmd.hpp"
 
 namespace hacks::shared::catbot
 {

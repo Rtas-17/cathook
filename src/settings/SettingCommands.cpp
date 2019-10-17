@@ -1,4 +1,28 @@
+#include <convar.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <stdio.h>
+#include <string.h>
+#include <sys/stat.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <array>
+#include <memory>
+#include <unordered_map>
+#include <utility>
+
 #include "SettingCommands.hpp"
+#include "Manager.hpp"
+#include "Menu.hpp"
+#include "MiscTemporary.hpp"
+#include "Settings.hpp"
+#include "SettingsIO.hpp"
+#include "SettingsManagerList.hpp"
+#include "WindowManager.hpp"
+#include "cvwrapper.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "logging.hpp"
 /*
   Created on 29.07.18.
 */

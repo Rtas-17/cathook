@@ -5,9 +5,29 @@
  *      Author: nullifiedcat
  */
 
-#include <settings/Int.hpp>
-#include "common.hpp"
-#include "hacks/AutoJoin.hpp"
+#include <convar.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <steam/isteamuser.h>
+#include <steam/steamclientpublic.h>
+#include <steam/steamuniverse.h>
+#include <string>
+#include <vector>
+
+#include "CSignature.h"
+#include "CTFGCClientSystem.hpp"
+#include "CTFParty.hpp"
+#include "CTFPartyClient.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "cvwrapper.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "logging.hpp"
+#include "playerlist.hpp"
+#include "tfmm.hpp"
+#include "timer.hpp"
 
 settings::Int queue{ "autoqueue.mode", "7" };
 

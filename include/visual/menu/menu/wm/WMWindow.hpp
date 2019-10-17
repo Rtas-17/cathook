@@ -7,11 +7,22 @@
 #include <menu/object/container/Container.hpp>
 #include <settings/Bool.hpp>
 #include <menu/wm/WindowHeader.hpp>
+#include <string>
+#include <vector>
+
+#include "Int.hpp"
+#include "SDL_events.h"
+
+namespace tinyxml2 {
+class XMLElement;
+}  // namespace tinyxml2
 
 namespace zerokernel
 {
 
 class WindowContainer;
+class Message;
+class WindowHeader;
 
 class WMWindow : public Container
 {

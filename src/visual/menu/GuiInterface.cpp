@@ -2,13 +2,44 @@
   Created on 29.07.18.
 */
 #include <menu/GuiInterface.hpp>
-
 #include <menu/menu/Menu.hpp>
 #include <drawing.hpp>
 #include <menu/menu/special/SettingsManagerList.hpp>
 #include <menu/menu/special/PlayerListController.hpp>
 #include <hack.hpp>
-#include <common.hpp>
+#include <cdll_int.h>
+#include <igameevents.h>
+#include <stdio.h>
+#include <steam/isteamfriends.h>
+#include <steam/steamclientpublic.h>
+#include <steam/steamuniverse.h>
+#include <vgui/ISurface.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <array>
+#include <memory>
+#include <stack>
+#include <string>
+#include <utility>
+
+#include "BaseMenuObject.hpp"
+#include "Container.hpp"
+#include "Key.hpp"
+#include "Registered.hpp"
+#include "SDL_events.h"
+#include "SDL_keyboard.h"
+#include "Table.hpp"
+#include "WindowManager.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "helpers.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "playerlist.hpp"
+#include "playerresource.h"
+#include "timer.hpp"
 
 static settings::Button open_gui_button{ "visual.open-gui-button", "Insert" };
 

@@ -7,14 +7,14 @@
 
 #pragma once
 
-class ConVar;
-
 #include <core/sdk.hpp>
 #include <core/interfaces.hpp>
-
+#include <convar.h>
 #include <string>
 #include <vector>
 #include <functional>
+
+class ConVar;
 
 class CatCommand
 {

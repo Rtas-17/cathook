@@ -5,7 +5,18 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <dlfcn.h>
+#include <icommandline.h>
+#include <stdint.h>
+#include <string>
+
+#include "CSignature.h"
+#include "bytepatch.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "init.hpp"
+#include "logging.hpp"
+#include "sharedobj.hpp"
 
 bool *allowSecureServers{ nullptr };
 

@@ -5,11 +5,33 @@
  *      Author: nullifiedcat
  */
 
-#include <hacks/hacklist.hpp>
 #include <settings/Bool.hpp>
 #include <hacks/AntiAim.hpp>
+#include <basetypes.h>
+#include <engine/ICollideable.h>
+#include <engine/IEngineTrace.h>
+#include <math.h>
+#include <mathlib/mathlib.h>
+#include <mathlib/vector.h>
+#include <core/sdk.hpp>
+#include <string>
 
-#include "common.hpp"
+#include "AntiAim.hpp"
+#include "AntiBackstab.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "classinfo.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "gameinfo.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "trace.hpp"
+#include "usercmd.hpp"
 
 namespace hacks::shared::antiaim
 {

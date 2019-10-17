@@ -5,7 +5,12 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <chrono>
+#include <string>
+
+#include "cvwrapper.hpp"
+#include "logging.hpp"
+#include "profiler.hpp"
 
 unsigned g_spewcount{ 0 };
 

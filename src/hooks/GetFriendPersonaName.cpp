@@ -4,8 +4,33 @@
 */
 
 #include <settings/String.hpp>
+#include <cdll_int.h>
+#include <steam/isteamuser.h>
+#include <steam/steamclientpublic.h>
+#include <string.h>
+#include <core/sdk.hpp>
+#include <chrono>
+#include <random>
+#include <string>
+#include <utility>
+
 #include "HookedMethods.hpp"
 #include "PlayerTools.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "config.h"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "ipc.hpp"
+#include "localplayer.hpp"
+#include "timer.hpp"
+
+class ISteamFriends;
 
 static settings::String ipc_name{ "name.ipc", "" };
 settings::String force_name{ "name.custom", "" };

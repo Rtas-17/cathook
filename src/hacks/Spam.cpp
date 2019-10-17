@@ -7,8 +7,27 @@
 
 #include <hacks/Spam.hpp>
 #include <settings/Bool.hpp>
-#include "common.hpp"
-#include "MiscTemporary.hpp"
+#include <cdll_int.h>
+#include <stdlib.h>
+#include <core/sdk.hpp>
+#include <chrono>
+#include <stack>
+
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "String.hpp"
+#include "chatstack.hpp"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "gameinfo.hpp"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "textfile.hpp"
+#include "timer.hpp"
 
 namespace hacks::shared::spam
 {

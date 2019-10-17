@@ -4,8 +4,25 @@
 */
 
 #include <MiscTemporary.hpp>
-#include <settings/Float.hpp>
+#include <cdll_int.h>
+#include <inputsystem/ButtonCode.h>
+#include <inputsystem/iinputsystem.h>
+#include <mathlib/vector.h>
+#include <view_shared.h>
+#include <core/sdk.hpp>
+#include <string>
+
 #include "HookedMethods.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
 
 static settings::Float override_fov_zoomed{ "visual.fov-zoomed", "0" };
 static settings::Float override_fov{ "visual.fov", "0" };

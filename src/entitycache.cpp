@@ -5,11 +5,23 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <cdll_int.h>
+#include <icliententity.h>
+#include <icliententitylist.h>
+#include <mathlib/vector.h>
+#include <string.h>
+#include <optional>
+#include <string>
 
-#include <time.h>
-#include <settings/Float.hpp>
 #include "soundcache.hpp"
+#include "Registered.hpp"
+#include "entitycache.hpp"
+#include "entityhitboxcache.hpp"
+#include "enums.hpp"
+#include "helpers.hpp"
+#include "interfaces.hpp"
+#include "netvars.hpp"
+#include "profiler.hpp"
 
 bool IsProjectileACrit(CachedEntity *ent)
 {

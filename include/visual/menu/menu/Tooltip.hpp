@@ -7,8 +7,8 @@
 
 #include <menu/BaseMenuObject.hpp>
 #include <menu/Utility.hpp>
-#include <string>
 #include <menu/object/Text.hpp>
+#include <string>
 
 namespace zerokernel
 {

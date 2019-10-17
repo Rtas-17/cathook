@@ -1,7 +1,27 @@
-#include "common.hpp"
+#include <cdll_int.h>
+#include <icliententity.h>
+#include <mathlib/vector.h>
+#include <mathlib/vector2d.h>
+#include <algorithm>
+#include <optional>
+#include <string>
+
 #include "PlayerTools.hpp"
 #include "playerresource.h"
 #include "soundcache.hpp"
+#include "Bool.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "colors.hpp"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "playerlist.hpp"
 
 namespace hacks::shared::tracers
 {

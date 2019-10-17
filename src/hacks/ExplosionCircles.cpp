@@ -14,8 +14,21 @@
     along with Cathook.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-#include "common.hpp"
+#include <math.h>
+#include <mathlib/vector.h>
+#include <string>
+#include <vector>
+
 #include "drawing.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "classinfo.hpp"
+#include "colors.hpp"
+#include "entitycache.hpp"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
 
 namespace hacks::tf2::explosioncircles
 {

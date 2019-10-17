@@ -6,8 +6,20 @@
  */
 
 #include <hacks/AntiCheat.hpp>
-#include <settings/Bool.hpp>
-#include "common.hpp"
+#include <cdll_int.h>
+#include <iserver.h>
+#include <mathlib/vector.h>
+#include <string.h>
+#include <string>
+
+#include "Registered.hpp"
+#include "ac/antiaim.hpp"
+#include "entitycache.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "interfaces.hpp"
+
+class KeyValues;
 
 namespace ac::antiaim
 {

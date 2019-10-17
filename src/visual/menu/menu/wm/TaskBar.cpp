@@ -3,9 +3,17 @@
 */
 #include <menu/object/container/Container.hpp>
 #include <menu/wm/TaskBar.hpp>
-#include <menu/wm/WMWindow.hpp>
 #include <menu/wm/Task.hpp>
 #include <menu/Menu.hpp>
+#include <memory>
+#include <string>
+#include <vector>
+
+#include "BaseMenuObject.hpp"
+#include "BoundingBox.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "colors.hpp"
 
 namespace zerokernel_taskbar
 {

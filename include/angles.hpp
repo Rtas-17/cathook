@@ -7,8 +7,13 @@
 
 #pragma once
 
-#include "common.hpp"
 #include <core/logging.hpp>
+#include <stddef.h>
+
+#include "common.hpp"
+
+class CachedEntity;
+
 namespace angles
 {
 

@@ -1,6 +1,21 @@
+#include <cdll_int.h>
+#include <math.h>
+#include <mathlib/vector.h>
+#include <string>
+
 #include "config.h"
+#include "Bool.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "colors.hpp"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "entityhitboxcache.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "playerlist.hpp"
 #if ENABLE_VISUALS
-#include "common.hpp"
 
 namespace hacks::shared::lightesp
 {

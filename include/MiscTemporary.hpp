@@ -6,7 +6,13 @@
 #pragma once
 
 #include <settings/Bool.hpp>
+#include <core/sdk.hpp>
+#include <array>
+
 #include "common.hpp"
+#include "Registered.hpp"
+#include "config.h"
+#include "timer.hpp"
 
 #define MENU_COLOR (menu_color)
 

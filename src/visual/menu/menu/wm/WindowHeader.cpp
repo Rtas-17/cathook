@@ -3,6 +3,18 @@
 #include <menu/wm/WMWindow.hpp>
 #include <menu/Menu.hpp>
 #include <menu/Message.hpp>
+#include <stdio.h>
+#include <memory>
+#include <string>
+#include <utility>
+
+#include "BoundingBox.hpp"
+#include "Container.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "Text.hpp"
+#include "WindowCloseButton.hpp"
+#include "colors.hpp"
 
 /*
   Created on 06.07.18.

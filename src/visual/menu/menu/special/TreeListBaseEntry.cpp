@@ -1,9 +1,13 @@
 #include <SDL2/SDL_events.h>
 #include <menu/BaseMenuObject.hpp>
 #include <menu/special/TreeListBaseEntry.hpp>
-
-#include <menu/Menu.hpp>
 #include <settings/Registered.hpp>
+#include <string>
+
+#include "BoundingBox.hpp"
+#include "Rgba.hpp"
+#include "colors.hpp"
+#include "drawing.hpp"
 
 /*
   Created on 26.07.18.

@@ -6,8 +6,15 @@
  */
 
 #include <playerresource.h>
+#include <client_class.h>
+#include <icliententity.h>
+#include <icliententitylist.h>
 
-#include "common.hpp"
+#include "classinfo.hpp"
+#include "entitycache.hpp"
+#include "gameinfo.hpp"
+#include "interfaces.hpp"
+#include "netvars.hpp"
 
 void TFPlayerResource::Update()
 {

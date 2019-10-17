@@ -6,14 +6,23 @@
  */
 
 #include <stdarg.h>
-#include <string.h>
-
 #include <pwd.h>
 #include <settings/Bool.hpp>
+#include <stdio.h>
+#include <time.h>
+#include <unistd.h>
+#include <core/sdk.hpp>
+#include <memory>
+#include <ostream>
+#include <string>
 
-#include "common.hpp"
 #include "hack.hpp"
 #include "MiscTemporary.hpp"
+#include "Registered.hpp"
+#include "config.h"
+#include "helpers.hpp"
+#include "interfaces.hpp"
+#include "logging.hpp"
 
 static settings::Boolean log_to_console{ "hack.log-console", "false" };
 

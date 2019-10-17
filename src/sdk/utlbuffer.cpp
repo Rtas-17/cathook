@@ -9,16 +9,22 @@
 #pragma warning(disable : 4514)
 
 #include "utlbuffer.h"
+
 #include <stdio.h>
 #include <stdarg.h>
 #include <ctype.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <byteswap.h>
+#include <mathlib/mathlib.h>
+#include <memalloc.h>
+#include <minmax.h>
+#include <string.h>
+#include <utlmemory.h>
+#include <algorithm>
+
 #include "tier1/strtools.h"
 #include "tier1/characterset.h"
-
-// memdbgon must be the last include file in a .cpp file!!!
-#include "tier0/memdbgon.h"
 
 //-----------------------------------------------------------------------------
 // Character conversions for C strings

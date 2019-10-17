@@ -5,12 +5,10 @@
  *      Author: nullifiedcat
  */
 
-#include <core/logging.hpp>
+#include <stdint.h>
+
 #include "sdk/HUD.h"
-
 #include "copypasted/CSignature.h"
-
-#include <string.h>
 
 CHudElement *CHud::FindElement(const char *name)
 {

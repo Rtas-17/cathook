@@ -5,9 +5,6 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
-#include "hacks/Backtrack.hpp"
-
 /*
  * Targeting priorities:
  * passive bullet vacc medic
@@ -18,6 +15,17 @@
  */
 
 /* Assuming given entity is a valid target range 0 to 100 */
+#include <mathlib/vector.h>
+
+#include "classinfo.hpp"
+#include "conditions.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "helpers.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "playerlist.hpp"
+
 int GetScoreForEntity(CachedEntity *entity)
 {
     if (!entity)

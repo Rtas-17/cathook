@@ -7,6 +7,15 @@
 #include <settings/Settings.hpp>
 #include <menu/object/Text.hpp>
 #include <menu/special/TreeListBaseEntry.hpp>
+#include <memory>
+#include <string>
+
+#include "BaseMenuObject.hpp"
+#include "SDL_events.h"
+
+namespace settings {
+class IVariable;
+}  // namespace settings
 
 namespace zerokernel
 {

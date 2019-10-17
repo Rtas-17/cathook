@@ -5,9 +5,26 @@
  *      Author: nullifiedcat
  */
 
-#include <settings/Bool.hpp>
-#include "common.hpp"
+#include <icliententitylist.h>
+#include <math.h>
+#include <mathlib/vector.h>
+#include <core/sdk.hpp>
+#include <optional>
+#include <string>
+
 #include "hack.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "usercmd.hpp"
 
 namespace hacks::tf2::autobackstab
 {

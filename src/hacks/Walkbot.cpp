@@ -5,14 +5,52 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
-#include "hack.hpp"
-
-#include <boost/algorithm/string.hpp>
-#include <sys/dir.h>
 #include <sys/stat.h>
-#include <hacks/hacklist.hpp>
-#include <settings/Bool.hpp>
+#include <bits/exception.h>
+#include <cdll_int.h>
+#include <convar.h>
+#include <dirent.h>
+#include <icliententitylist.h>
+#include <math.h>
+#include <mathlib/vector.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <steam/isteamfriends.h>
+#include <string.h>
+#include <boost/algorithm/string/predicate.hpp>
+#include <core/sdk.hpp>
+#include <chrono>
+#include <istream>
+#include <memory>
+#include <string>
+#include <vector>
+
+#include "hack.hpp"
+#include "AntiAim.hpp"
+#include "C_BaseCombatWeapon.hpp"
+#include "C_TFWeaponBase.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "colors.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+#include "tfmm.hpp"
+#include "timer.hpp"
+#include "usercmd.hpp"
+
+class IClientEntity;
 
 namespace hacks::shared::walkbot
 {

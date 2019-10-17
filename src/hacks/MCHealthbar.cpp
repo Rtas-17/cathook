@@ -5,7 +5,21 @@
  *      Author: UNKN0WN
  */
 
-#include "common.hpp"
+#include <math.h>
+#include <memory>
+#include <string>
+#include <vector>
+
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "atlas.hpp"
+#include "colors.hpp"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "init.hpp"
+#include "localplayer.hpp"
+#include "playerresource.h"
 
 namespace mchealthbar
 {

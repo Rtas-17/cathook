@@ -15,8 +15,8 @@ class CUserCmd;
 class CCommand;
 struct player_info_s;
 class Vector;
-
 class ICvar;
+
 void SetCVarInterface(ICvar *iface);
 
 #define PI 3.14159265358979323846f
@@ -27,14 +27,22 @@ void SetCVarInterface(ICvar *iface);
 #include <conditions.hpp>
 #include <entitycache.hpp>
 #include <core/logging.hpp>
-
+#include <core/sdk.hpp>
+#include <bspflags.h>
+#include <convar.h>
+#include <engine/ICollideable.h>
+#include <inputsystem/ButtonCode.h>
+#include <mathlib/vector.h>
 #include <string>
 #include <sstream>
 #include <vector>
 #include <mutex>
 #include <random>
+#include <iterator>
+#include <memory>
+#include <utility>
 
-#include <core/sdk.hpp>
+#include "localplayer.hpp"
 
 // typedef void ( *FnCommandCallback_t )( const CCommand &command );
 

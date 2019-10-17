@@ -6,7 +6,6 @@
  */
 
 #include "velocity.hpp"
-#include "common.hpp"
 #include "copypasted/CSignature.h"
 
 namespace velocity

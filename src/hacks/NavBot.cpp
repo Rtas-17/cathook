@@ -1,10 +1,44 @@
-#include "common.hpp"
+#include <bspflags.h>
+#include <cdll_int.h>
+#include <float.h>
+#include <icliententity.h>
+#include <icliententitylist.h>
+#include <math.h>
+#include <mathlib/vector.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <algorithm>
+#include <memory>
+#include <optional>
+#include <string>
+#include <utility>
+#include <vector>
+
 #include "navparser.hpp"
 #include "NavBot.hpp"
 #include "PlayerTools.hpp"
 #include "Aimbot.hpp"
-#include "FollowBot.hpp"
-#include "soundcache.hpp"
+#include "CNavFile.h"
+#include "C_BaseCombatWeapon.hpp"
+#include "C_TFWeaponBase.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "classinfo.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "itemtypes.hpp"
+#include "localplayer.hpp"
+#include "nav.h"
+#include "netvars.hpp"
+#include "playerresource.h"
+#include "timer.hpp"
+#include "usercmd.hpp"
 
 namespace hacks::tf2::NavBot
 {

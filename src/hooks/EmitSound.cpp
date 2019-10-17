@@ -1,6 +1,11 @@
-#include "common.hpp"
+#include <soundflags.h>
+#include <utlvector.h>
+
 #include "HookedMethods.hpp"
 #include "soundcache.hpp"
+
+class IRecipientFilter;
+class Vector;
 
 namespace hooked_methods
 {

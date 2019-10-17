@@ -3,9 +3,12 @@
 */
 
 #include <menu/object/container/Container.hpp>
-#include <iostream>
 #include <menu/ObjectFactory.hpp>
-#include <menu/Menu.hpp>
+#include <utility>
+
+#include "BaseMenuObject.hpp"
+#include "BoundingBox.hpp"
+#include "tinyxml2.hpp"
 
 namespace zerokernel
 {

@@ -5,11 +5,28 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
 #include <hacks/Aimbot.hpp>
-#include <settings/Bool.hpp>
-#include "MiscTemporary.hpp"
+#include <cdll_int.h>
+#include <igameevents.h>
+#include <inetchannelinfo.h>
+#include <string.h>
+#include <core/sdk.hpp>
+#include <array>
+#include <chrono>
+#include <string>
+#include <vector>
+
 #include "init.hpp"
+#include "Registered.hpp"
+#include "classinfo.hpp"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "globals.h"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+#include "timer.hpp"
 
 static settings::Boolean hitrate_check{ "hitrate.enable", "true" };
 

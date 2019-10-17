@@ -5,10 +5,39 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <bspflags.h>
+#include <cdll_int.h>
+#include <engine/ICollideable.h>
+#include <engine/IEngineTrace.h>
+#include <float.h>
+#include <icliententity.h>
+#include <math.h>
+#include <mathlib/vector.h>
+#include <core/sdk.hpp>
+#include <array>
+#include <optional>
+#include <string>
+#include <vector>
+
 #include "PlayerTools.hpp"
 #include "Trigger.hpp"
 #include "Backtrack.hpp"
+#include "C_TFWeaponBaseMelee.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "entitycache.hpp"
+#include "entityhitboxcache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "trace.hpp"
+#include "usercmd.hpp"
 
 namespace hacks::tf2::autobackstab
 {

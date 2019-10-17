@@ -5,10 +5,14 @@
  *      Author: bencat07
  */
 #include <boost/circular_buffer.hpp>
+#include <settings/Bool.hpp>
+#include <boost/move/utility_core.hpp>
+
 #include "reclasses.hpp"
 #include "C_TEFireBullets.hpp"
 #include "common.hpp"
-#include <settings/Bool.hpp>
+
+class C_TEFireBullets;
 #pragma once
 namespace hacks::tf2::seedprediction
 {

@@ -6,7 +6,22 @@
  */
 
 #include <settings/Registered.hpp>
-#include "common.hpp"
+#include <cdll_int.h>
+#include <igameevents.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <string>
+#include <vector>
+
+#include "HookTools.hpp"
+#include "config.h"
+#include "enums.hpp"
+#include "helpers.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "logging.hpp"
+#include "timer.hpp"
 
 namespace hacks::shared::announcer
 {

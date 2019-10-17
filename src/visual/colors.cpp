@@ -5,9 +5,21 @@
  *      Author: nullifiedcat
  */
 
-#include <online/Online.hpp>
 #include <PlayerTools.hpp>
-#include "common.hpp"
+#include <icliententity.h>
+#include <math.h>
+#include <core/sdk.hpp>
+#include <optional>
+
+#include "classinfo.hpp"
+#include "colors.hpp"
+#include "conditions.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "helpers.hpp"
+#include "interfaces.hpp"
+#include "itemtypes.hpp"
+#include "netvars.hpp"
 
 rgba_t colors::EntityF(CachedEntity *ent)
 {

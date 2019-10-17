@@ -8,6 +8,18 @@
 #include <settings/Settings.hpp>
 #include <menu/Menu.hpp>
 
+#include "BaseMenuObject.hpp"
+#include "SDL_events.h"
+#include "Text.hpp"
+
+namespace settings {
+struct Key;
+template <typename T> class Variable;
+}  // namespace settings
+namespace tinyxml2 {
+class XMLElement;
+}  // namespace tinyxml2
+
 namespace zerokernel
 {
 

@@ -1,9 +1,12 @@
 #include <SDL2/SDL_events.h>
-#include <menu/BaseMenuObject.hpp>
-#include <menu/tinyxml2.hpp>
 #include <menu/object/container/ModalContainer.hpp>
 #include <menu/ModalBehavior.hpp>
-#include <menu/Menu.hpp>
+#include <string>
+
+#include "Container.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "colors.hpp"
 
 /*
   Created on 26.07.18.

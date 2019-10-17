@@ -7,10 +7,13 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+
 #include "Manager.hpp"
 
 namespace settings
 {
+class IVariable;
+class Manager;
 
 class SettingsReader
 {

@@ -1,12 +1,24 @@
 // Replace darkstorm stuff with my stuff
 //#include "SDK.h"
 
-#include "common.hpp"
-
 // module should be a pointer to the base of an elf32 module
 // this is not the value returned by dlopen (which returns an opaque handle to
 // the module) the best method to get this address is with fopen() and mmap()
 // (check the GetClientSignature() and GetEngineSignature() for an example)
+#include <dlfcn.h>
+#include <elf.h>
+#include <fcntl.h>
+#include <link.h>
+#include <stdint.h>
+#include <string.h>
+#include <sys/mman.h>
+#include <unistd.h>
+#include <string>
+
+#include "CSignature.h"
+#include "logging.hpp"
+#include "sharedobj.hpp"
+
 Elf32_Shdr *getSectionHeader(void *module, const char *sectionName)
 {
     // we need to get the modules actual address from the handle

@@ -7,7 +7,11 @@
 
 #pragma once
 
+#include <string>
+
 #include "common.hpp"
+#include "colors.hpp"
+#include "drawing.hpp"
 
 namespace textures
 {

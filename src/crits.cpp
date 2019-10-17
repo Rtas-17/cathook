@@ -6,9 +6,40 @@
  */
 
 #include <settings/Bool.hpp>
-#include "common.hpp"
+#include <cdll_int.h>
+#include <checksum_md5.h>
+#include <convar.h>
+#include <engine/ICollideable.h>
+#include <icliententity.h>
+#include <mathlib/vector.h>
+#include <stdint.h>
+#include <core/sdk.hpp>
+#include <string>
+#include <unordered_map>
+
 #include "Backtrack.hpp"
 #include "PlayerTools.hpp"
+#include "C_TFWeaponBase.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "classinfo.hpp"
+#include "colors.hpp"
+#include "config.h"
+#include "crits.hpp"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "gameinfo.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "offsets.hpp"
+#include "usercmd.hpp"
+
+struct model_t;
 
 std::unordered_map<int, int> command_number_mod{};
 

@@ -4,6 +4,16 @@
 
 #include <menu/object/container/ModalSelect.hpp>
 #include <menu/Message.hpp>
+#include <stdio.h>
+#include <memory>
+#include <utility>
+#include <vector>
+
+#include "BaseMenuObject.hpp"
+#include "BoundingBox.hpp"
+#include "KeyValue.hpp"
+#include "ModalBehavior.hpp"
+#include "Option.hpp"
 
 zerokernel::ModalSelect::ModalSelect() : ModalContainer{}
 {

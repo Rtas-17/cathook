@@ -5,7 +5,20 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <bits/exception.h>
+#include <dlfcn.h>
+#include <link.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+#include <memory>
+#include <string>
+
+#include "config.h"
+#include "helpers.hpp"
+#include "logging.hpp"
+#include "sharedobj.hpp"
 
 namespace sharedobj
 {

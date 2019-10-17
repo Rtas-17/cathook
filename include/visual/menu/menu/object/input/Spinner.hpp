@@ -6,6 +6,21 @@
 
 #include <menu/object/input/TextInput.hpp>
 #include <menu/menu/special/SettingsManagerList.hpp>
+#include <string>
+#include <type_traits>
+
+#include "BaseMenuObject.hpp"
+#include "BoundingBox.hpp"
+#include "Float.hpp"
+#include "Int.hpp"
+#include "Manager.hpp"
+#include "Registered.hpp"
+#include "SDL_events.h"
+#include "SDL_keyboard.h"
+#include "SDL_keycode.h"
+#include "Settings.hpp"
+#include "Utility.hpp"
+#include "tinyxml2.hpp"
 
 namespace zerokernel
 {

@@ -6,7 +6,18 @@
 
 #include <menu/object/container/List.hpp>
 #include <settings/Manager.hpp>
+#include <stddef.h>
 #include <optional>
+#include <string>
+#include <utility>
+#include <vector>
+
+namespace settings {
+class IVariable;
+}  // namespace settings
+namespace zerokernel {
+class Container;
+}  // namespace zerokernel
 
 namespace zerokernel::special
 {

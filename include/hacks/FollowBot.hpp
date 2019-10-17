@@ -7,6 +7,8 @@
 
 #include "common.hpp"
 
+class CachedEntity;
+
 namespace hacks::shared::followbot
 {
 

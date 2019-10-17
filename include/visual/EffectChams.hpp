@@ -7,9 +7,16 @@
 
 #pragma once
 
+#include <materialsystem/MaterialSystemUtil.h>
+
 #include "common.hpp"
 #include "sdk/ScreenSpaceEffects.h"
 #include "core/sdk.hpp"
+#include "colors.hpp"
+
+class CachedEntity;
+class IClientEntity;
+class KeyValues;
 
 namespace effect_chams
 {

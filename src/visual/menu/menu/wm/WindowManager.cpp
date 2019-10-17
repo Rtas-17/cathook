@@ -4,6 +4,17 @@
 
 #include <menu/BaseMenuObject.hpp>
 #include <menu/wm/WindowManager.hpp>
+#include <stdio.h>
+#include <memory>
+#include <string>
+#include <utility>
+
+#include "BoundingBox.hpp"
+#include "TaskBar.hpp"
+#include "WMWindow.hpp"
+#include "WindowContainer.hpp"
+#include "WindowHeader.hpp"
+#include "tinyxml2.hpp"
 
 void zerokernel::WindowManager::loadFromXml(const tinyxml2::XMLElement *data)
 {

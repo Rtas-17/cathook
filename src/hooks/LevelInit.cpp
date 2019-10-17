@@ -3,14 +3,33 @@
   Copyright (c) 2018 nullworks. All rights reserved.
 */
 
-#include <hacks/hacklist.hpp>
 #include <settings/Bool.hpp>
+#include <cdll_int.h>
+#include <convar.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <time.h>
+#include <core/sdk.hpp>
+#include <string>
+#include <vector>
 #if ENABLE_VISUALS
 #include <menu/GuiInterface.hpp>
 #endif
 #include "HookedMethods.hpp"
 #include "MiscTemporary.hpp"
-#include "navparser.hpp"
+#include "Backtrack.hpp"
+#include "CSignature.h"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "SimpleIPC/ipcb.hpp"
+#include "chatstack.hpp"
+#include "config.h"
+#include "globals.h"
+#include "interfaces.hpp"
+#include "ipc.hpp"
+#include "logging.hpp"
+#include "playerlist.hpp"
+#include "textfile.hpp"
 
 static settings::Boolean halloween_mode{ "misc.force-halloween", "false" };
 static settings::Int skybox_changer{ "misc.skybox-override", "0" };

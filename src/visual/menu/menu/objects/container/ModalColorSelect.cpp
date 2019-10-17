@@ -3,6 +3,24 @@
 */
 
 #include <menu/object/container/ModalColorSelect.hpp>
+#include <stdio.h>
+#include <initializer_list>
+#include <string>
+
+#include "BaseMenuObject.hpp"
+#include "BoundingBox.hpp"
+#include "Container.hpp"
+#include "Int.hpp"
+#include "Menu.hpp"
+#include "Message.hpp"
+#include "ModalContainer.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "Settings.hpp"
+#include "Slider.hpp"
+#include "StringInput.hpp"
+#include "drawing.hpp"
+#include "tinyxml2.hpp"
 
 namespace zerokernel_modalcolorselect
 {

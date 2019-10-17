@@ -2,8 +2,12 @@
   Created on 02.07.18.
 */
 
-#include "logging.hpp"
 #include <settings/Manager.hpp>
+#include <stdexcept>
+#include <utility>
+
+#include "logging.hpp"
+#include "Settings.hpp"
 
 namespace settings
 {

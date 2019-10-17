@@ -2,12 +2,42 @@
 // Created by bencat07 on 28.09.18.
 //
 
-#include "common.hpp"
+#include <bspflags.h>
+#include <cdll_int.h>
+#include <engine/ICollideable.h>
+#include <float.h>
+#include <math.h>
+#include <mathlib/vector.h>
+#include <core/sdk.hpp>
+#include <cstdint>
+#include <string>
+#include <utility>
+
 #include "settings/Bool.hpp"
-#include "settings/Int.hpp"
-#include "settings/Key.hpp"
 #include "PlayerTools.hpp"
-#include "hacks/Trigger.hpp"
+#include "CSignature.h"
+#include "C_TFWeaponBaseMelee.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "bytepatch.hpp"
+#include "classinfo.hpp"
+#include "conditions.hpp"
+#include "entitycache.hpp"
+#include "entityhitboxcache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "playerresource.h"
+#include "prediction.hpp"
+#include "usercmd.hpp"
+
+class IClientEntity;
 
 namespace hacks::tf2::misc_aimbot
 {

@@ -5,10 +5,49 @@
  *      Author: nullifiedcat
  */
 
+#include <cdll_int.h>
+#include <convar.h>
+#include <ext/alloc_traits.h>
+#include <limits.h>
+#include <mathlib/vector.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <core/sdk.hpp>
+#include <array>
+#include <memory>
+#include <stdexcept>
+#include <string>
+#include <utility>
+#include <vector>
+
 #include "common.hpp"
 #include "hacks/FollowBot.hpp"
 #include "settings/Bool.hpp"
 #include "PlayerTools.hpp"
+#include "HookTools.hpp"
+#include "Int.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "classinfo.hpp"
+#include "conditions.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "entitycache.hpp"
+#include "entityhitboxcache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "ipc.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+#include "playerlist.hpp"
+#include "playerresource.h"
+#include "timer.hpp"
+#include "usercmd.hpp"
 
 namespace hacks::tf::autoheal
 {

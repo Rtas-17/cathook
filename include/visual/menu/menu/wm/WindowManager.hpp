@@ -6,9 +6,19 @@
 
 #include <menu/wm/WindowContainer.hpp>
 #include <menu/wm/TaskBar.hpp>
+#include <stddef.h>
+
+#include "Container.hpp"
+
+namespace tinyxml2 {
+class XMLElement;
+}  // namespace tinyxml2
 
 namespace zerokernel
 {
+class TaskBar;
+class WMWindow;
+class WindowContainer;
 
 class WindowManager : public Container
 {

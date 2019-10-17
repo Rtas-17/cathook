@@ -32,12 +32,18 @@ Index of this file:
 #endif
 
 #include "visual/imgui/imgui.h"
+#include "imconfig.h"
 #ifndef IMGUI_DEFINE_MATH_OPERATORS
 #define IMGUI_DEFINE_MATH_OPERATORS
 #endif
-#include "visual/imgui/imgui_internal.h"
-
 #include <ctype.h>                        // toupper, isprint
+#include <float.h>
+#include <limits.h>
+#include <stdarg.h>
+#include <stdio.h>
+#include <string.h>
+
+#include "visual/imgui/imgui_internal.h"
 #if defined(_MSC_VER) && _MSC_VER <= 1500 // MSVC 2008 or earlier
 #include <stddef.h>                       // intptr_t
 #else

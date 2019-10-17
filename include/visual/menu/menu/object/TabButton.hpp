@@ -6,7 +6,11 @@
 #pragma once
 
 #include <menu/object/container/TabContainer.hpp>
+#include <stddef.h>
 #include <string>
+
+#include "BaseMenuObject.hpp"
+#include "Text.hpp"
 
 namespace zerokernel
 {

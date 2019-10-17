@@ -7,12 +7,15 @@
 
 #pragma once
 
+#include <cstddef>
+#include <unordered_map>
+
 #include "config.h"
 #include "common.hpp"
-#include <cstddef>
 
 class KeyValues;
 class CachedEntity;
+class Vector;
 
 namespace ac::aimbot
 {

@@ -5,14 +5,26 @@
 #pragma once
 
 #include <settings/Settings.hpp>
+#include <menu/Menu.hpp>
+#include <menu/object/container/ModalSelect.hpp>
 #include <map>
 #include <optional>
 #include <string>
-#include <menu/Menu.hpp>
-#include <menu/object/container/ModalSelect.hpp>
+#include <vector>
+
+#include "BaseMenuObject.hpp"
+#include "Text.hpp"
+
+namespace settings {
+class IVariable;
+}  // namespace settings
+namespace tinyxml2 {
+class XMLElement;
+}  // namespace tinyxml2
 
 namespace zerokernel
 {
+class Message;
 
 class Select : public BaseMenuObject
 {

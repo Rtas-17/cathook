@@ -6,6 +6,9 @@
 
 #include <menu/object/Text.hpp>
 #include <menu/special/TreeListBaseEntry.hpp>
+#include <string>
+
+#include "SDL_events.h"
 
 namespace zerokernel
 {

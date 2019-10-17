@@ -14,10 +14,23 @@
     along with Cathook.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-#include "common.hpp"
+#include <cdll_int.h>
+#include <convar.h>
+#include <core/sdk.hpp>
+#include <fstream>
+#include <unordered_map>
+#include <utility>
+#include <vector>
+
 #include "ChatCommands.hpp"
 #include "MiscTemporary.hpp"
-#include <iostream>
+#include "Registered.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "helpers.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
 
 namespace hacks::shared::ChatCommands
 {

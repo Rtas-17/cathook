@@ -7,16 +7,16 @@
 
 #pragma once
 
+#include <stack>
+#include <string>
+#include <mutex>
+
 class IHack;
 class CUserCmd;
 class CViewSetup;
 class bf_read;
 class ConCommand;
 class CCommand;
-
-#include <stack>
-#include <string>
-#include <mutex>
 
 namespace hack
 {

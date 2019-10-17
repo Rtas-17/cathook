@@ -5,10 +5,28 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
 #include <PlayerTools.hpp>
 #include <settings/Bool.hpp>
-#include "soundcache.hpp"
+#include <engine/ICollideable.h>
+#include <icliententity.h>
+#include <mathlib/vector.h>
+#include <optional>
+#include <string>
+#include <vector>
+
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "classinfo.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "gameinfo.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
+#include "usercmd.hpp"
 
 namespace hacks::tf::autosticky
 {

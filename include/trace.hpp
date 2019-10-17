@@ -9,6 +9,8 @@
 
 #include <engine/IEngineTrace.h>
 
+class IHandleEntity;
+
 // This file is a mess. I need to fix it. TODO
 
 class IClientEntity;

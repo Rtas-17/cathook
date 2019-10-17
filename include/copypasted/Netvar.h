@@ -1,9 +1,10 @@
 #pragma once
 
-#include <unordered_map>
 //#include <cstring>
 #include <string.h>
+#include <unordered_map>
 #include <memory>
+
 #include "core/logging.hpp"
 
 // this and the cpp are creds to "Altimor"
@@ -38,6 +39,7 @@ public:
 class netvar_tree
 {
     struct node;
+
     using map_type = std::unordered_map<const char *, std::shared_ptr<node>, hash_char, equal_char>;
 
     struct node

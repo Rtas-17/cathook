@@ -6,6 +6,9 @@
  */
 
 #pragma once
+#include <string>
+#include <vector>
+
 #include "common.hpp"
 
 class CatCommand;

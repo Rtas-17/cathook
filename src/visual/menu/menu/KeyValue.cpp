@@ -4,6 +4,7 @@
 
 #include <menu/KeyValue.hpp>
 #include <sstream>
+#include <utility>
 
 namespace zerokernel
 {

@@ -5,10 +5,13 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
-
 #include <stdlib.h>
 #include <string.h>
+#include <stdint.h>
+#include <vector>
+
+#include "hooks.hpp"
+#include "logging.hpp"
 
 namespace hooks
 {

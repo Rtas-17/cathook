@@ -5,8 +5,35 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <cdll_int.h>
+#include <stdio.h>
+#include <string.h>
+#include <core/sdk.hpp>
+#include <cstdint>
+#include <functional>
+#include <iosfwd>
+#include <string>
 
+#include "Bool.hpp"
+#include "CSignature.h"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "bytepatch.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "hooks.hpp"
+#include "imaterialsystemfixed.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "logging.hpp"
+#include "timer.hpp"
+
+class IFileList;
+class IMaterial;
+class ITexture;
+namespace settings {
+template <typename T> class VariableBase;
+}  // namespace settings
 #if !ENABLE_TEXTMODE
 static settings::Boolean null_graphics("hack.nullgraphics", "false");
 #else

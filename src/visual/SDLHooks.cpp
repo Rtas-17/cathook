@@ -5,6 +5,9 @@
 
 #include "SDLHooks.hpp"
 #include "HookedMethods.hpp"
+#include "SDL_video.h"
+#include "config.h"
+#include "sharedobj.hpp"
 
 namespace sdl_hooks
 {

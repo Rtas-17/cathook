@@ -5,8 +5,17 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
+#include <stdint.h>
+#include <steam/steamclientpublic.h>
+#include <vector>
+
 #include "core/e8call.hpp"
+#include "CSignature.h"
+#include "CTFPartyClient.hpp"
+
+namespace re {
+class ITFGroupMatchCriteria;
+}  // namespace re
 
 re::CTFPartyClient *re::CTFPartyClient::GTFPartyClient()
 {

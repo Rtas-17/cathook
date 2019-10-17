@@ -3,6 +3,14 @@
 */
 
 #include <menu/object/container/LabeledObject.hpp>
+#include <utility>
+#include <vector>
+
+#include "BaseMenuObject.hpp"
+#include "BoundingBox.hpp"
+#include "Container.hpp"
+#include "Text.hpp"
+#include "tinyxml2.hpp"
 
 void zerokernel::LabeledObject::loadFromXml(const tinyxml2::XMLElement *data)
 {

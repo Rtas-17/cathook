@@ -5,9 +5,14 @@
 #pragma once
 
 #include <menu/BaseMenuObject.hpp>
-
 #include <menu/Menu.hpp>
 #include <menu/Message.hpp>
+#include <stddef.h>
+#include <limits>
+#include <string>
+
+#include "SDL_events.h"
+#include "Text.hpp"
 
 namespace zerokernel
 {

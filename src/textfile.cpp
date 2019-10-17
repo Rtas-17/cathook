@@ -5,9 +5,15 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
-
 #include <stdio.h>
+#include <istream>
+#include <string>
+#include <vector>
+
+#include "config.h"
+#include "helpers.hpp"
+#include "logging.hpp"
+#include "textfile.hpp"
 
 TextFile::TextFile() : lines{}
 {

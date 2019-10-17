@@ -3,6 +3,14 @@
 */
 
 #include <menu/object/container/TabContainer.hpp>
+#include <ext/alloc_traits.h>
+#include <stdio.h>
+#include <utility>
+
+#include "BoundingBox.hpp"
+#include "Container.hpp"
+#include "TabSelection.hpp"
+#include "tinyxml2.hpp"
 
 namespace zerokernel
 {

@@ -7,7 +7,15 @@
 
 #pragma once
 
+#include <mathlib/vector.h>
+#include <array>
+#include <string>
+
 #include "common.hpp"
+#include "colors.hpp"
+#include "config.h"
+
+class CachedEntity;
 #if ENABLE_VISUALS
 namespace hacks::shared::esp
 {

@@ -6,6 +6,19 @@
 #include <menu/Menu.hpp>
 #include <menu/object/container/ModalColorSelect.hpp>
 #include <menu/menu/special/SettingsManagerList.hpp>
+#include <memory>
+#include <string>
+#include <utility>
+#include <vector>
+
+#include "BoundingBox.hpp"
+#include "Manager.hpp"
+#include "Registered.hpp"
+#include "Rgba.hpp"
+#include "Settings.hpp"
+#include "WindowManager.hpp"
+#include "drawing.hpp"
+#include "tinyxml2.hpp"
 
 namespace zerokernel_colorselector
 {

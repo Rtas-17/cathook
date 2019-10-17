@@ -5,14 +5,57 @@
  *
  */
 
-#include "common.hpp"
 #include <hacks/FollowBot.hpp>
 #include <settings/Bool.hpp>
+#include <cdll_int.h>
+#include <convar.h>
+#include <icliententitylist.h>
+#include <math.h>
+#include <mathlib/vector.h>
+#include <stddef.h>
+#include <steam/steamclientpublic.h>
+#include <core/sdk.hpp>
+#include <array>
+#include <memory>
+#include <optional>
+#include <stdexcept>
+#include <string>
+#include <utility>
+#include <vector>
+
+#include "common.hpp"
 #include "navparser.hpp"
 #include "NavBot.hpp"
 #include "soundcache.hpp"
 #include "playerresource.h"
-#include "PlayerTools.hpp"
+#include "CTFPartyClient.hpp"
+#include "C_BaseCombatWeapon.hpp"
+#include "HookTools.hpp"
+#include "Int.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "colors.hpp"
+#include "conditions.hpp"
+#include "config.h"
+#include "cvwrapper.hpp"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "globals.h"
+#include "helpers.hpp"
+#include "in_buttons.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "ipc.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+#include "playerlist.hpp"
+#include "prediction.hpp"
+#include "timer.hpp"
+#include "usercmd.hpp"
+
+class IClientEntity;
 
 namespace hacks::shared::followbot
 {

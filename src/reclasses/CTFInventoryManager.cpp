@@ -4,8 +4,19 @@
  *  Created on: Apr 26, 2018
  *      Author: bencat07
  */
-#include "common.hpp"
+#include <stdint.h>
+#include <string>
+
 #include "e8call.hpp"
+#include "CSignature.h"
+#include "CTFInventoryManager.hpp"
+#include "C_BaseEntity.hpp"
+#include "cvwrapper.hpp"
+#include "enums.hpp"
+#include "logging.hpp"
+#include "offsets.hpp"
+#include "vfunc.hpp"
+
 using namespace re;
 
 CTFInventoryManager *CTFInventoryManager::GTFInventoryManager()

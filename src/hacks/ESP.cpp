@@ -6,11 +6,56 @@
  */
 
 #include <hacks/ESP.hpp>
-#include <online/Online.hpp>
 #include <PlayerTools.hpp>
 #include <settings/Bool.hpp>
+#include <bits/exception.h>
+#include <bspflags.h>
+#include <cdll_int.h>
+#include <client_class.h>
+#include <engine/ICollideable.h>
+#include <engine/IEngineTrace.h>
+#include <icliententity.h>
+#include <math.h>
+#include <mathlib/mathlib.h>
+#include <studio.h>
+#include <core/sdk.hpp>
+#include <algorithm>
+#include <memory>
+#include <mutex>
+#include <optional>
+#include <unordered_map>
+#include <vector>
+
 #include "common.hpp"
-#include "soundcache.hpp"
+#include "C_BaseCombatWeapon.hpp"
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "Settings.hpp"
+#include "SimpleIPC/ipcb.hpp"
+#include "classinfo.hpp"
+#include "conditions.hpp"
+#include "drawing.hpp"
+#include "entitycache.hpp"
+#include "entityhitboxcache.hpp"
+#include "enums.hpp"
+#include "gameinfo.hpp"
+#include "helpers.hpp"
+#include "hoovy.hpp"
+#include "iinput.h"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "ipc.hpp"
+#include "itemtypes.hpp"
+#include "localplayer.hpp"
+#include "logging.hpp"
+#include "netvars.hpp"
+#include "playerlist.hpp"
+#include "playerresource.h"
+#include "profiler.hpp"
+#include "timer.hpp"
+#include "trace.hpp"
+
+struct model_t;
 
 namespace hacks::shared::esp
 {

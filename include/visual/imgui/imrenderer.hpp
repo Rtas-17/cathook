@@ -15,6 +15,8 @@
  */
 
 #include <map>
+#include <string>
+
 #include "colors.hpp"
 
 class SDL_Window;

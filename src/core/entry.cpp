@@ -5,10 +5,12 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
 #include <pthread.h>
+#include <string>
 
 #include "hack.hpp"
+#include "cvwrapper.hpp"
+#include "logging.hpp"
 
 pthread_mutex_t mutex_quit;
 pthread_t thread_main;

@@ -6,8 +6,12 @@
 #include <dirent.h>
 #include <fcntl.h>
 #include <sys/stat.h>
-#include <thread>
 #include <MiscTemporary.hpp>
+#include <thread>
+#include <string>
+#include <vector>
+
+#include "config.h"
 #if ENABLE_VISUALS
 #include "Menu.hpp"
 #include "special/SettingsManagerList.hpp"

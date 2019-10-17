@@ -3,6 +3,13 @@
 #include <menu/special/TreeListCollapsible.hpp>
 #include <menu/object/container/Container.hpp>
 #include <menu/Menu.hpp>
+#include <stdio.h>
+#include <memory>
+#include <vector>
+
+#include "BaseMenuObject.hpp"
+#include "BoundingBox.hpp"
+#include "Text.hpp"
 
 /*
   Created on 26.07.18.

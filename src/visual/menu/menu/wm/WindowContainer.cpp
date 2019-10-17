@@ -4,6 +4,11 @@
 
 #include <menu/BaseMenuObject.hpp>
 #include <menu/wm/WindowContainer.hpp>
+#include <stdio.h>
+#include <utility>
+
+#include "BoundingBox.hpp"
+#include "WMWindow.hpp"
 
 bool zerokernel::WindowContainer::handleSdlEvent(SDL_Event *event)
 {

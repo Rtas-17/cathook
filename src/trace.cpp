@@ -5,11 +5,19 @@
  *      Author: nullifiedcat
  */
 
-#include "common.hpp"
-
 // This file is a mess. I need to fix it. TODO
 
 /* Default Filter */
+
+#include <client_class.h>
+#include <engine/IEngineTrace.h>
+#include <icliententity.h>
+
+#include "classinfo.hpp"
+#include "logging.hpp"
+#include "trace.hpp"
+
+class IHandleEntity;
 
 trace::FilterDefault::FilterDefault()
 {

@@ -6,6 +6,14 @@
 
 #include <settings/Settings.hpp>
 #include <menu/object/input/TextInput.hpp>
+#include <string>
+
+namespace settings {
+class IVariable;
+}  // namespace settings
+namespace tinyxml2 {
+class XMLElement;
+}  // namespace tinyxml2
 
 namespace zerokernel
 {

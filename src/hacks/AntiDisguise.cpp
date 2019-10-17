@@ -6,7 +6,18 @@
  */
 
 #include <settings/Bool.hpp>
-#include "common.hpp"
+#include <cdll_int.h>
+#include <string>
+
+#include "HookTools.hpp"
+#include "Registered.hpp"
+#include "conditions.hpp"
+#include "entitycache.hpp"
+#include "enums.hpp"
+#include "init.hpp"
+#include "interfaces.hpp"
+#include "localplayer.hpp"
+#include "netvars.hpp"
 
 namespace hacks::tf2::antidisguise
 {

@@ -2,14 +2,21 @@
   Created on 23.06.18.
 */
 
-#include "common.hpp"
-#include <unordered_map>
 #include <hoovy.hpp>
 #include <playerlist.hpp>
-#include <online/Online.hpp>
+#include <cdll_int.h>
+#include <unordered_map>
+#include <string>
+
 #include "PlayerTools.hpp"
 #include "entitycache.hpp"
 #include "settings/Bool.hpp"
+#include "Registered.hpp"
+#include "colors.hpp"
+#include "conditions.hpp"
+#include "cvwrapper.hpp"
+#include "enums.hpp"
+#include "netvars.hpp"
 
 namespace player_tools
 {
