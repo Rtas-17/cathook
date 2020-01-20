@@ -15,7 +15,6 @@
 #include <hacks/AntiAntiAim.hpp>
 #include "NavBot.hpp"
 #include "HookTools.hpp"
-#include "irc.hpp"
 
 #include "HookedMethods.hpp"
 #include "PreDataUpdate.hpp"
@@ -261,9 +260,6 @@ DEFINE_HOOKED_METHOD(CreateMove, bool, void *this_, float input_sample_time, CUs
         //        hacks::tf2::NavBot::Init();
         //        hacks::tf2::NavBot::initonce();
         nav::status = nav::off;
-#if ENABLE_IRC
-        IRC::auth();
-#endif
         hacks::tf2::NavBot::init(true);
         if (identify)
             sendIdentifyMessage(false);
@@ -289,7 +285,7 @@ DEFINE_HOOKED_METHOD(CreateMove, bool, void *this_, float input_sample_time, CUs
                 if (current_user_cmd->buttons & IN_ATTACK)
                     if (attackticks % *fullauto + 1 < *fullauto)
                         current_user_cmd->buttons &= ~IN_ATTACK;
-            static int fakelag_queue = 0;
+            static int fakelag_queue      = 0;
             g_pLocalPlayer->isFakeAngleCM = false;
             if (CE_GOOD(LOCAL_E))
                 if (fakelag_amount || (hacks::shared::antiaim::force_fakelag && hacks::shared::antiaim::isEnabled()))
